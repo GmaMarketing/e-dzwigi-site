@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-heading: var(--font-barlow);
+  --font-body: var(--font-manrope);
+
+  /* Color Palette - Hydromont Industrial (Advanced) */
+  --color-canvas: #f8fafc; /* Base light background */
+  --color-surface: #ffffff; /* Cards/Sections */
+  --color-accent: #e11d48; /* Red-600 - Sharp Industrial Red */
+  --color-accent-dark: #be123c; /* Red-700 */
+  --color-text-main: #0f172a; /* Slate-900 - Ink Black */
+  --color-text-muted: #64748b; /* Slate-500 */
+  --color-border: #e2e8f0;
+}
+
+@layer base {
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-text-main);
+    /* Subtle Engineering Grid */
+    background-image: 
+        linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: white;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  }
+}
