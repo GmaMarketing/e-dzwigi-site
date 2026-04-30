@@ -117,7 +117,7 @@ export default function OrderPage() {
             </div>
             <h2 className="font-heading font-black text-xl text-zinc-900 mb-3">Pobierz i wyślij mailem</h2>
             <p className="text-zinc-500 text-sm leading-relaxed flex-grow mb-6">
-              Pobierz formularz PDF, wypełnij i odeślij na team.gmamarketing@gmail.com
+              Pobierz formularz PDF, wypełnij i odeślij na biuro@e-dzwigi.pl
             </p>
             <a
               href="/Zlecenie.pdf"

@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
           <h2>5. Kontakt</h2>
           <p>
             W sprawach zwiazanych z ochrona danych osobowych prosimy o kontakt pod adresem
-            e-mail: <strong>team.gmamarketing@gmail.com</strong>.
+            e-mail: <strong>biuro@e-dzwigi.pl</strong>.
           </p>
         </div>
       </div>

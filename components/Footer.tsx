@@ -105,7 +105,7 @@ export function Footer() {
 
                 <div className="flex items-center gap-3 text-sm">
                     <Mail className="text-red-600" size={16} />
-                    <a href="mailto:team.gmamarketing@gmail.com" className="hover:text-white transition-colors">team.gmamarketing@gmail.com</a>
+                    <a href="mailto:biuro@e-dzwigi.pl" className="hover:text-white transition-colors">biuro@e-dzwigi.pl</a>
                 </div>
 
                 <div className="flex gap-6 text-xs text-slate-600 font-mono pt-2">

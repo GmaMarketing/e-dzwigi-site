@@ -332,12 +332,12 @@ export default function ContactPage() {
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
-                  <a href="mailto:team.gmamarketing@gmail.com" className="group bg-white border border-zinc-200 p-6 rounded-2xl hover:border-red-600/50 hover:bg-red-50/50 transition-all duration-300">
+                  <a href="mailto:biuro@e-dzwigi.pl" className="group bg-white border border-zinc-200 p-6 rounded-2xl hover:border-red-600/50 hover:bg-red-50/50 transition-all duration-300">
                        <div className="mb-4 text-red-600">
                           <Mail size={24} />
                       </div>
                       <span className="block text-[10px] uppercase font-bold tracking-widest text-zinc-400 mb-1">Email</span>
-                      <span className="block text-lg font-bold text-zinc-900 group-hover:text-red-600 transition-colors">team.gmamarketing@gmail.com</span>
+                      <span className="block text-lg font-bold text-zinc-900 group-hover:text-red-600 transition-colors">biuro@e-dzwigi.pl</span>
                   </a>
 
                   <a href="https://www.facebook.com/people/Us%C5%82ugi-D%C5%BAwigowe-Hydromont-SC/61556393884660/" target="_blank" rel="noopener noreferrer" className="group bg-[#1877F2] text-white p-6 rounded-2xl hover:bg-[#166fe5] transition-all duration-300 shadow-lg hover:shadow-[#1877F2]/30">
