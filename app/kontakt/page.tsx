@@ -29,16 +29,29 @@ export default function ContactPage() {
     setFormStatus("sending");
 
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const raw = new FormData(form);
+
+    const data = new FormData();
+    data.append("access_key", "c4af4d83-88ef-461c-afef-63613f6d4541");
+    data.append("subject", "Nowe zapytanie ze strony e-dzwigi.pl");
+    data.append("from_name", "Formularz e-dzwigi.pl");
+    data.append("Imię i nazwisko", raw.get("name") as string);
+    data.append("Email", raw.get("email") as string);
+    data.append("Telefon", raw.get("phone") as string);
+    const company = raw.get("company") as string;
+    if (company) data.append("Firma", company);
+    data.append("Wiadomość", raw.get("message") as string);
 
     try {
-      const res = await fetch("https://formsubmit.co/ajax/team.gmamarketing@gmail.com", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { Accept: "application/json" },
         body: data,
       });
 
-      if (res.ok) {
+      const json = await res.json();
+
+      if (json.success) {
         setFormStatus("success");
         form.reset();
       } else {
@@ -102,12 +115,7 @@ export default function ContactPage() {
                 onSubmit={handleSubmit}
                 className="bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm flex flex-col"
               >
-                {/* FormSubmit hidden fields */}
-                <input type="hidden" name="_subject" value="Nowe zapytanie ze strony e-dzwigi.pl" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="box" />
-                <input type="hidden" name="_url" value="https://e-dzwigi.pl/kontakt" />
-                <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
+                <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} aria-hidden="true" />
 
                 <h3 className="font-heading font-bold text-xl text-zinc-900 mb-6 flex items-center gap-3">
                     <span className="w-8 h-[2px] bg-red-600"></span>
@@ -166,15 +174,15 @@ export default function ContactPage() {
                       placeholder="Opisz zlecenie – rodzaj pracy, miasto, orientacyjny termin"
                     />
                   </div>
-                  <div>
-                    <label className="grid grid-cols-[20px_minmax(0,1fr)] items-start gap-3 cursor-pointer group">
+                  <div className="pt-6">
+                    <label className="flex items-start gap-3 cursor-pointer group">
                       <input
                         type="checkbox"
                         name="rodo"
                         required
-                        className="mt-[7px] h-5 w-5 shrink-0 self-start accent-red-600 cursor-pointer"
+                        className="mt-[2px] h-4 w-4 shrink-0 accent-red-600 cursor-pointer"
                       />
-                      <span className="block text-xs leading-5 text-zinc-500 transition-colors group-hover:text-zinc-700">
+                      <span className="text-xs leading-5 text-zinc-500 transition-colors group-hover:text-zinc-700">
                         Wyrażam zgodę na przetwarzanie danych osobowych w celu realizacji zapytania.
                         <span className="text-red-600 ml-1">*</span>
                       </span>

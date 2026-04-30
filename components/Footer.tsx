@@ -107,6 +107,17 @@ export function Footer() {
                     <Mail className="text-red-600" size={16} />
                     <a href="mailto:team.gmamarketing@gmail.com" className="hover:text-white transition-colors">team.gmamarketing@gmail.com</a>
                 </div>
+
+                <div className="flex gap-6 text-xs text-slate-600 font-mono pt-2">
+                    <div>
+                        <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-700 mb-0.5">NIP</span>
+                        646-278-06-04
+                    </div>
+                    <div>
+                        <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-700 mb-0.5">REGON</span>
+                        240669349
+                    </div>
+                </div>
             </div>
           </div>
 

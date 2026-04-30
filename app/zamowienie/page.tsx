@@ -64,16 +64,30 @@ export default function OrderPage() {
     setFormStatus("sending");
 
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const raw = new FormData(form);
+
+    const data = new FormData();
+    data.append("access_key", "c4af4d83-88ef-461c-afef-63613f6d4541");
+    data.append("subject", "Nowe zlecenie ze strony e-dzwigi.pl");
+    data.append("from_name", "Formularz Zamówień e-dzwigi.pl");
+    data.append("Imię i nazwisko / Firma", raw.get("name") as string);
+    data.append("Telefon", raw.get("phone") as string);
+    data.append("Email", raw.get("email") as string);
+    const message = raw.get("message") as string;
+    if (message) data.append("Uwagi", message);
+    const file = raw.get("attachment") as File;
+    if (file && file.size > 0) data.append("attachment", file);
 
     try {
-      const res = await fetch("https://formsubmit.co/ajax/team.gmamarketing@gmail.com", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { Accept: "application/json" },
         body: data,
       });
 
-      if (res.ok) {
+      const json = await res.json();
+
+      if (json.success) {
         setFormStatus("success");
         form.reset();
       } else {
@@ -267,12 +281,7 @@ export default function OrderPage() {
               onSubmit={handleSubmit}
               className="bg-white rounded-2xl border border-zinc-100 shadow-sm p-8"
             >
-              {/* FormSubmit hidden fields */}
-              <input type="hidden" name="_subject" value="Nowe zlecenie ze strony e-dzwigi.pl" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="box" />
-              <input type="hidden" name="_url" value="https://e-dzwigi.pl/zamowienie" />
-              <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
+              <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} aria-hidden="true" />
 
               <div className="grid md:grid-cols-2 gap-5 mb-5">
                 {/* Imię i nazwisko / Firma */}
