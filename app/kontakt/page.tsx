@@ -31,22 +31,23 @@ export default function ContactPage() {
     const form = e.currentTarget;
     const raw = new FormData(form);
 
-    const data = new FormData();
-    data.append("access_key", "c4af4d83-88ef-461c-afef-63613f6d4541");
-    data.append("subject", "Nowe zapytanie ze strony e-dzwigi.pl");
-    data.append("from_name", "Formularz e-dzwigi.pl");
-    data.append("Imię i nazwisko", raw.get("name") as string);
-    data.append("Email", raw.get("email") as string);
-    data.append("Telefon", raw.get("phone") as string);
+    const body: Record<string, string> = {
+      access_key: "c4af4d83-88ef-461c-afef-63613f6d4541",
+      subject: "Nowe zapytanie ze strony e-dzwigi.pl",
+      from_name: "Formularz e-dzwigi.pl",
+      "Imię i nazwisko": raw.get("name") as string,
+      "Email": raw.get("email") as string,
+      "Telefon": raw.get("phone") as string,
+      "Wiadomość": raw.get("message") as string,
+    };
     const company = raw.get("company") as string;
-    if (company) data.append("Firma", company);
-    data.append("Wiadomość", raw.get("message") as string);
+    if (company) body["Firma"] = company;
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { Accept: "application/json" },
-        body: data,
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(body),
       });
 
       const json = await res.json();
