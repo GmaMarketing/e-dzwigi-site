@@ -67,8 +67,9 @@ export default function OrderPage() {
     const data = new FormData(form);
 
     try {
-      const res = await fetch("/api/order", {
+      const res = await fetch("https://formsubmit.co/ajax/team.gmamarketing@gmail.com", {
         method: "POST",
+        headers: { Accept: "application/json" },
         body: data,
       });
 
@@ -266,7 +267,11 @@ export default function OrderPage() {
               onSubmit={handleSubmit}
               className="bg-white rounded-2xl border border-zinc-100 shadow-sm p-8"
             >
-              {/* Spam trap */}
+              {/* FormSubmit hidden fields */}
+              <input type="hidden" name="_subject" value="Nowe zlecenie ze strony e-dzwigi.pl" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="box" />
+              <input type="hidden" name="_url" value="https://e-dzwigi.pl/zamowienie" />
               <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
               <div className="grid md:grid-cols-2 gap-5 mb-5">
