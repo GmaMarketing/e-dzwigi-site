@@ -64,34 +64,15 @@ export default function OrderPage() {
     setFormStatus("sending");
 
     const form = e.currentTarget;
-    const raw = new FormData(form);
-
-    const body: Record<string, string> = {
-      access_key: "c4af4d83-88ef-461c-afef-63613f6d4541",
-      subject: "Nowe zlecenie ze strony e-dzwigi.pl",
-      from_name: "Formularz Zamowien e-dzwigi.pl",
-      "Imie i nazwisko / Firma": raw.get("name") as string,
-      "Telefon": raw.get("phone") as string,
-      "Email": raw.get("email") as string,
-    };
-    const message = raw.get("message") as string;
-    if (message) body["Uwagi"] = message;
-
-    const file = raw.get("attachment") as File;
-    if (file && file.size > 0) {
-      body["Zalacznik"] = `${file.name} (${Math.round(file.size / 1024)} KB) - plik wyslany osobno na maila`;
-    }
+    const data = new FormData(form);
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("/api/send-order", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(body),
+        body: data,
       });
 
-      const json = await res.json();
-
-      if (json.success) {
+      if (res.ok) {
         setFormStatus("success");
         form.reset();
       } else {
@@ -285,7 +266,6 @@ export default function OrderPage() {
               onSubmit={handleSubmit}
               className="bg-white rounded-2xl border border-zinc-100 shadow-sm p-8"
             >
-              <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} aria-hidden="true" />
 
               <div className="grid md:grid-cols-2 gap-5 mb-5">
                 {/* Imię i nazwisko / Firma */}
@@ -347,7 +327,7 @@ export default function OrderPage() {
                   className="w-full cursor-pointer rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 file:mr-4 file:cursor-pointer file:rounded-lg file:border-0 file:bg-zinc-900 file:px-4 file:py-1.5 file:text-xs file:font-bold file:uppercase file:tracking-wider file:text-white file:transition-all hover:file:bg-red-600 outline-none focus:border-red-600 focus:ring-2 focus:ring-red-600/20 transition-all"
                 />
                 <p className="text-xs text-zinc-400 mt-1.5">
-                  Jeśli wypełniłeś PDF offline – wyślij go mailem na <span className="text-zinc-500 font-medium">team.gmamarketing@gmail.com</span> wraz z imieniem i nazwiskiem
+                  Jeśli wypełniłeś PDF offline – możesz go tutaj załączyć
                 </p>
               </div>
 

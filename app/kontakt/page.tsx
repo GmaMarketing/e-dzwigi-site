@@ -31,28 +31,20 @@ export default function ContactPage() {
     const form = e.currentTarget;
     const raw = new FormData(form);
 
-    const body: Record<string, string> = {
-      access_key: "c4af4d83-88ef-461c-afef-63613f6d4541",
-      subject: "Nowe zapytanie ze strony e-dzwigi.pl",
-      from_name: "Formularz e-dzwigi.pl",
-      "Imię i nazwisko": raw.get("name") as string,
-      "Email": raw.get("email") as string,
-      "Telefon": raw.get("phone") as string,
-      "Wiadomość": raw.get("message") as string,
-    };
-    const company = raw.get("company") as string;
-    if (company) body["Firma"] = company;
-
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("/api/send", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(body),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name:    raw.get("name"),
+          email:   raw.get("email"),
+          phone:   raw.get("phone"),
+          company: raw.get("company"),
+          message: raw.get("message"),
+        }),
       });
 
-      const json = await res.json();
-
-      if (json.success) {
+      if (res.ok) {
         setFormStatus("success");
         form.reset();
       } else {
@@ -116,7 +108,6 @@ export default function ContactPage() {
                 onSubmit={handleSubmit}
                 className="bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm flex flex-col"
               >
-                <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} aria-hidden="true" />
 
                 <h3 className="font-heading font-bold text-xl text-zinc-900 mb-6 flex items-center gap-3">
                     <span className="w-8 h-[2px] bg-red-600"></span>
