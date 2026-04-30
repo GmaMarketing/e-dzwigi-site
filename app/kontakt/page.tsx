@@ -32,9 +32,8 @@ export default function ContactPage() {
     const data = new FormData(form);
 
     try {
-      const res = await fetch("https://formsubmit.co/ajax/team.gmamarketing@gmail.com", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { Accept: "application/json" },
         body: data,
       });
 
@@ -102,11 +101,7 @@ export default function ContactPage() {
                 onSubmit={handleSubmit}
                 className="bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm flex flex-col"
               >
-                {/* FormSubmit hidden fields */}
-                <input type="hidden" name="_subject" value="Nowe zapytanie ze strony e-dzwigi.pl" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="box" />
-                <input type="hidden" name="_url" value="https://e-dzwigi.pl/kontakt" />
+                {/* Spam trap */}
                 <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
                 <h3 className="font-heading font-bold text-xl text-zinc-900 mb-6 flex items-center gap-3">
@@ -172,7 +167,7 @@ export default function ContactPage() {
                         type="checkbox"
                         name="rodo"
                         required
-                        className="mt-0.5 w-5 h-5 shrink-0 accent-red-600 cursor-pointer"
+                        className="mt-2 h-5 w-5 shrink-0 accent-red-600 cursor-pointer"
                       />
                       <span className="text-xs text-zinc-500 group-hover:text-zinc-700 transition-colors leading-relaxed">
                         Wyrażam zgodę na przetwarzanie danych osobowych w celu realizacji zapytania.
