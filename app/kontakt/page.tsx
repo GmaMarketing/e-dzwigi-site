@@ -105,7 +105,9 @@ export default function ContactPage() {
                 {/* FormSubmit hidden fields */}
                 <input type="hidden" name="_subject" value="Nowe zapytanie ze strony e-dzwigi.pl" />
                 <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_url" value="https://e-dzwigi.pl/kontakt" />
+                <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
                 <h3 className="font-heading font-bold text-xl text-zinc-900 mb-6 flex items-center gap-3">
                     <span className="w-8 h-[2px] bg-red-600"></span>
@@ -119,7 +121,7 @@ export default function ContactPage() {
                       id="name"
                       name="name"
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
                       placeholder="Jan Kowalski"
                     />
                   </div>
@@ -130,7 +132,7 @@ export default function ContactPage() {
                       id="email"
                       name="email"
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
                       placeholder="jan@example.com"
                     />
                   </div>
@@ -140,7 +142,7 @@ export default function ContactPage() {
                       type="tel"
                       id="phone"
                       name="phone"
-                      className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
                       placeholder="508 313 906"
                     />
                   </div>
@@ -150,7 +152,7 @@ export default function ContactPage() {
                       type="text"
                       id="company"
                       name="company"
-                      className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
                       placeholder="Nazwa firmy"
                     />
                   </div>
@@ -160,7 +162,7 @@ export default function ContactPage() {
                       id="message"
                       name="message"
                       required
-                      className="w-full h-full min-h-[120px] px-4 py-3 rounded-xl border border-zinc-200 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all resize-none"
+                      className="h-full min-h-[120px] w-full resize-none rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
                       placeholder="Opisz zlecenie – rodzaj pracy, miasto, orientacyjny termin"
                     />
                   </div>

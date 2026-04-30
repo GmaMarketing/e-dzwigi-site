@@ -270,7 +270,9 @@ export default function OrderPage() {
               {/* FormSubmit hidden fields */}
               <input type="hidden" name="_subject" value="Nowe zlecenie ze strony e-dzwigi.pl" />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_template" value="box" />
+              <input type="hidden" name="_url" value="https://e-dzwigi.pl/zamowienie" />
+              <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
               <div className="grid md:grid-cols-2 gap-5 mb-5">
                 {/* Imię i nazwisko / Firma */}
@@ -283,7 +285,7 @@ export default function OrderPage() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                    className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
                     placeholder="Jan Kowalski"
                   />
                 </div>
@@ -298,7 +300,7 @@ export default function OrderPage() {
                     id="phone"
                     name="phone"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                    className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
                     placeholder="np. 500 100 200"
                   />
                 </div>
@@ -314,7 +316,7 @@ export default function OrderPage() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                  className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
                   placeholder="na który wyślemy potwierdzenie"
                 />
               </div>
@@ -329,7 +331,7 @@ export default function OrderPage() {
                   id="attachment"
                   name="attachment"
                   accept=".pdf"
-                  className="w-full px-4 py-3 rounded-xl border border-zinc-200 file:mr-4 file:py-1.5 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-bold file:uppercase file:tracking-wider file:bg-zinc-900 file:text-white hover:file:bg-red-600 file:transition-all file:cursor-pointer cursor-pointer outline-none focus:border-red-600 focus:ring-2 focus:ring-red-600/20 transition-all"
+                  className="w-full cursor-pointer rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 file:mr-4 file:cursor-pointer file:rounded-lg file:border-0 file:bg-zinc-900 file:px-4 file:py-1.5 file:text-xs file:font-bold file:uppercase file:tracking-wider file:text-white file:transition-all hover:file:bg-red-600 outline-none focus:border-red-600 focus:ring-2 focus:ring-red-600/20 transition-all"
                 />
                 <p className="text-xs text-zinc-400 mt-1.5">
                   Jeśli wypełniłeś PDF offline – możesz go tutaj załączyć
@@ -345,7 +347,7 @@ export default function OrderPage() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all resize-none"
+                  className="w-full resize-none rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
                   placeholder="Dodatkowe informacje do zlecenia"
                 />
               </div>
