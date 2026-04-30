@@ -167,14 +167,14 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label className="grid grid-cols-[20px_1fr] items-start gap-3 cursor-pointer group">
+                    <label className="grid grid-cols-[20px_minmax(0,1fr)] items-start gap-3 cursor-pointer group">
                       <input
                         type="checkbox"
                         name="rodo"
                         required
-                        className="mt-3 h-5 w-5 shrink-0 accent-red-600 cursor-pointer"
+                        className="mt-[7px] h-5 w-5 shrink-0 self-start accent-red-600 cursor-pointer"
                       />
-                      <span className="block pt-1 text-xs text-zinc-500 group-hover:text-zinc-700 transition-colors leading-relaxed">
+                      <span className="block text-xs leading-5 text-zinc-500 transition-colors group-hover:text-zinc-700">
                         Wyrażam zgodę na przetwarzanie danych osobowych w celu realizacji zapytania.
                         <span className="text-red-600 ml-1">*</span>
                       </span>
