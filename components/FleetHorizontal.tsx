@@ -106,7 +106,7 @@ export function FleetHorizontal() {
           {fleet.map((m) => (
             <div key={m.slug} className="relative group border-t border-zinc-200">
               <div className="aspect-video relative w-full overflow-hidden">
-                <Image src={m.image} alt={m.model} fill sizes="100vw" className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                <Image src={m.image} alt={m.model} fill sizes="100vw" className="object-cover transition-all duration-700" />
                 <div className="absolute inset-0 bg-zinc-900/20" />
               </div>
               <div className="p-8">
