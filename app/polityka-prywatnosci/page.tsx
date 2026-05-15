@@ -7,20 +7,20 @@ import Link from "next/link";
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-red-600 selection:text-white">
+    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
       <Navbar />
 
       <div className="flex-grow pt-32 pb-20 container mx-auto px-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-zinc-500 hover:text-red-600 mb-8 transition-colors text-xs font-bold uppercase tracking-widest"
+          className="inline-flex items-center gap-2 text-zinc-500 hover:text-amber-500 mb-8 transition-colors text-xs font-bold uppercase tracking-widest"
         >
           <ArrowLeft size={16} />
           Powrót do strony głównej
         </Link>
 
         <div className="mb-12">
-          <span className="text-red-600 font-bold tracking-widest uppercase mb-4 block">
+          <span className="text-amber-500 font-bold tracking-widest uppercase mb-4 block">
             Informacje prawne
           </span>
           <h1 className="text-4xl md:text-5xl font-heading font-black text-zinc-900 leading-tight mb-6">

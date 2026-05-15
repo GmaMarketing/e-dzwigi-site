@@ -29,18 +29,18 @@ export function ServiceMap() {
     <section className="py-20 md:py-32 bg-zinc-50 relative overflow-hidden" id="zasieg">
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-red-100 rounded-full mb-8 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-amber-100 rounded-full mb-8 shadow-sm">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-600" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-300 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500" />
             </span>
-            <span className="text-xs font-bold text-red-600 uppercase tracking-wider">
+            <span className="text-xs font-bold text-amber-500 uppercase tracking-wider">
               Obszar działania
             </span>
           </div>
 
           <h2 className="font-heading font-black text-4xl md:text-5xl text-zinc-900 mb-8 leading-tight">
-            DOCIERAMY TAM <br /> GDZIE INNI <br /> <span className="text-red-600">NIE MOGĄ</span>
+            DOCIERAMY TAM <br /> GDZIE INNI <br /> <span className="text-amber-500">NIE MOGĄ</span>
           </h2>
 
           <p className="text-zinc-500 text-lg leading-relaxed mb-10 max-w-md">
@@ -50,7 +50,7 @@ export function ServiceMap() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="flex items-start gap-4 p-4 bg-white rounded-xl border border-zinc-100 shadow-sm">
-              <Clock className="text-red-600 shrink-0 mt-1" />
+              <Clock className="text-amber-500 shrink-0 mt-1" />
               <div>
                 <span className="block font-bold text-zinc-900 text-sm uppercase">
                   Szybka Reakcja
@@ -59,7 +59,7 @@ export function ServiceMap() {
               </div>
             </div>
             <div className="flex items-start gap-4 p-4 bg-white rounded-xl border border-zinc-100 shadow-sm">
-              <ShieldCheck className="text-red-600 shrink-0 mt-1" />
+              <ShieldCheck className="text-amber-500 shrink-0 mt-1" />
               <div>
                 <span className="block font-bold text-zinc-900 text-sm uppercase">
                   Bezpieczeństwo
@@ -108,13 +108,13 @@ export function ServiceMap() {
                         style={{
                           default: {
                             fill: isSilesia ? "#fee2e2" : "#f4f4f5",
-                            stroke: isSilesia ? "#dc2626" : "#e4e4e7",
+                            stroke: isSilesia ? "#F59E0B" : "#e4e4e7",
                             strokeWidth: isSilesia ? 2 : 1,
                             outline: "none",
                           },
                           hover: {
                             fill: isSilesia ? "#fecaca" : "#e4e4e7",
-                            stroke: isSilesia ? "#dc2626" : "#a1a1aa",
+                            stroke: isSilesia ? "#F59E0B" : "#a1a1aa",
                             strokeWidth: 2,
                             outline: "none",
                           },
@@ -131,8 +131,8 @@ export function ServiceMap() {
 
               <Marker coordinates={tychyCoordinates}>
                 <g className="group cursor-pointer">
-                  <circle r={8} fill="#dc2626" stroke="#fff" strokeWidth={2} className="animate-pulse opacity-50" />
-                  <circle r={4} fill="#dc2626" stroke="#fff" strokeWidth={2} />
+                  <circle r={8} fill="#F59E0B" stroke="#fff" strokeWidth={2} className="animate-pulse opacity-50" />
+                  <circle r={4} fill="#F59E0B" stroke="#fff" strokeWidth={2} />
                   <text
                     textAnchor="middle"
                     y={-15}
@@ -152,7 +152,7 @@ export function ServiceMap() {
                 Baza Główna
               </span>
               <div className="flex items-center gap-2 text-zinc-900 font-mono font-bold text-sm">
-                <MapPin size={14} className="text-red-600" />
+                <MapPin size={14} className="text-amber-500" />
                 Tychy, ul. Dojazdowa 7
               </div>
             </div>

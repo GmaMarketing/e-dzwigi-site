@@ -132,7 +132,7 @@ export function FleetGrid() {
                         
                         <div className="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between text-accent font-bold text-sm cursor-pointer group/link">
                             <span>Zobacz specyfikację</span>
-                            <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center group-hover/link:bg-accent group-hover/link:text-white transition-colors">
+                            <div className="w-8 h-8 rounded-full bg-amber-50 flex items-center justify-center group-hover/link:bg-accent group-hover/link:text-white transition-colors">
                                 <ChevronRight size={16} />
                             </div>
                         </div>

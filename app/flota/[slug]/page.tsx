@@ -58,7 +58,7 @@ export default async function MachinePage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-red-600 selection:text-white">
+    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
       <Navbar />
       
       {/* Hero Section */}
@@ -74,18 +74,18 @@ export default async function MachinePage({ params }: { params: Promise<{ slug: 
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-zinc-900/50" />
         </div>
         <div className="container mx-auto px-6 relative z-10 text-center">
-            <span className="text-red-500 font-bold tracking-widest uppercase mb-4 block">Specyfikacja Techniczna</span>
+            <span className="text-amber-400 font-bold tracking-widest uppercase mb-4 block">Specyfikacja Techniczna</span>
             <h1 className="text-5xl md:text-7xl font-heading font-black mb-6">{machine.model}</h1>
             <div className="flex justify-center gap-4 flex-wrap">
                 <span className="px-4 py-2 border border-white/20 rounded-full text-sm font-mono">{machine.type}</span>
-                <span className="px-4 py-2 bg-red-600 text-white rounded-full text-sm font-bold uppercase tracking-widest">Dostępny</span>
+                <span className="px-4 py-2 bg-amber-500 text-white rounded-full text-sm font-bold uppercase tracking-widest">Dostępny</span>
             </div>
         </div>
       </section>
 
       <div className="flex-grow container mx-auto px-6 py-20">
         
-        <Link href="/#flota" className="inline-flex items-center gap-2 text-zinc-500 hover:text-red-600 mb-12 transition-colors text-xs font-bold uppercase tracking-widest">
+        <Link href="/#flota" className="inline-flex items-center gap-2 text-zinc-500 hover:text-amber-500 mb-12 transition-colors text-xs font-bold uppercase tracking-widest">
             <ArrowLeft size={16} />
             Powrót do floty
         </Link>
@@ -98,7 +98,7 @@ export default async function MachinePage({ params }: { params: Promise<{ slug: 
                 {/* Description */}
                 <div>
                     <h2 className="text-2xl font-bold text-zinc-900 mb-6 flex items-center gap-3">
-                        <span className="w-8 h-1 bg-red-600 rounded-full" />
+                        <span className="w-8 h-1 bg-amber-500 rounded-full" />
                         Opis Maszyny
                     </h2>
                     <p className="text-lg text-zinc-600 leading-relaxed">
@@ -172,7 +172,7 @@ export default async function MachinePage({ params }: { params: Promise<{ slug: 
                     <h3 className="text-xl font-bold mb-2">Zainteresowany?</h3>
                     <p className="text-zinc-400 text-sm mb-8">Skontaktuj się z nami, aby sprawdzić dostępność i cenę wynajmu.</p>
                     
-                    <a href="tel:+48508313906" className="block w-full py-4 bg-red-600 hover:bg-white hover:text-red-600 text-center rounded-xl font-bold uppercase tracking-widest transition-all mb-4">
+                    <a href="tel:+48508313906" className="block w-full py-4 bg-amber-500 hover:bg-white hover:text-amber-500 text-center rounded-xl font-bold uppercase tracking-widest transition-all mb-4">
                         Zadzwoń Teraz
                     </a>
                     <Link href="/kontakt#formularz" className="block w-full py-4 border border-white/20 hover:bg-white hover:text-zinc-900 text-center rounded-xl font-bold uppercase tracking-widest transition-all">

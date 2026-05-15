@@ -21,19 +21,19 @@ const services = [
 
 export default function OfferPage() {
   return (
-    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-red-600 selection:text-white">
+    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
       <Navbar />
       
       <div className="flex-grow pt-32 pb-20 container mx-auto px-6">
         
-        <Link href="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-red-600 mb-8 transition-colors text-xs font-bold uppercase tracking-widest">
+        <Link href="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-amber-500 mb-8 transition-colors text-xs font-bold uppercase tracking-widest">
             <ArrowLeft size={16} />
             Powrót do strony głównej
         </Link>
 
         {/* Equipment picker */}
         <div className="mb-16">
-          <span className="text-red-600 font-bold tracking-widest uppercase mb-4 block text-xs">DOBIERZ SPRZĘT DO ZLECENIA</span>
+          <span className="text-amber-500 font-bold tracking-widest uppercase mb-4 block text-xs">DOBIERZ SPRZĘT DO ZLECENIA</span>
           <h1 className="font-heading font-black text-4xl md:text-5xl text-zinc-900 leading-tight mb-8">JAKI DŹWIG POTRZEBUJESZ?</h1>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {[
@@ -48,7 +48,7 @@ export default function OfferPage() {
                 key={card.href}
                 href={card.href}
                 className="group flex flex-col bg-white border border-zinc-100 rounded-2xl shadow-sm cursor-pointer overflow-hidden
-                  hover:-translate-y-1 hover:shadow-xl hover:border-red-600 transition-all duration-300"
+                  hover:-translate-y-1 hover:shadow-xl hover:border-amber-500 transition-all duration-300"
               >
                 <div className="relative w-full h-40 bg-zinc-100">
                   <Image
@@ -58,17 +58,17 @@ export default function OfferPage() {
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 50vw, 33vw"
                   />
-                  <div className="absolute top-3 left-3 bg-red-600 text-white font-heading font-black text-lg px-3 py-1 rounded-lg shadow-lg">
+                  <div className="absolute top-3 left-3 bg-amber-500 text-white font-heading font-black text-lg px-3 py-1 rounded-lg shadow-lg">
                     {card.meter}
                   </div>
                   {card.isNew && (
-                    <div className="absolute top-3 right-3 z-10 bg-red-600 text-white text-[9px] font-bold uppercase tracking-[0.1em] px-2 py-[5px] rounded-full shadow-lg leading-none whitespace-nowrap ring-2 ring-white">
+                    <div className="absolute top-3 right-3 z-10 bg-amber-500 text-white text-[9px] font-bold uppercase tracking-[0.1em] px-2 py-[5px] rounded-full shadow-lg leading-none whitespace-nowrap ring-2 ring-white">
                       NOWOŚĆ
                     </div>
                   )}
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
-                  <div className="font-heading font-black text-3xl text-red-600 leading-none mb-3 select-none">
+                  <div className="font-heading font-black text-3xl text-amber-500 leading-none mb-3 select-none">
                     {card.capacity}
                   </div>
                   <h2 className="font-heading font-black text-sm text-zinc-900 uppercase leading-tight mb-2">
@@ -77,7 +77,7 @@ export default function OfferPage() {
                   <p className="text-[10px] text-zinc-400 font-mono uppercase tracking-wider pt-3 border-t border-zinc-100 mb-4">
                     {card.specs}
                   </p>
-                  <div className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1 text-red-600">
+                  <div className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1 text-amber-500">
                     <ArrowRight size={14} className="transition-transform group-hover:translate-x-1 duration-300" />
                   </div>
                 </div>
@@ -87,7 +87,7 @@ export default function OfferPage() {
         </div>
 
         <div className="mb-16 max-w-4xl">
-            <span className="text-red-600 font-bold tracking-widest uppercase mb-4 block">CO MOŻEMY DLA CIEBIE ZROBIĆ</span>
+            <span className="text-amber-500 font-bold tracking-widest uppercase mb-4 block">CO MOŻEMY DLA CIEBIE ZROBIĆ</span>
             <h2 className="text-4xl md:text-6xl font-heading font-black text-zinc-900 leading-tight mb-8">
                 USŁUGI DŹWIGOWE <br /> I PODNOŚNIKOWE
             </h2>
@@ -114,10 +114,10 @@ export default function OfferPage() {
 
                     {/* Content */}
                     <div className="relative z-10 p-8 h-full flex flex-col justify-end">
-                        <div className="mb-4 w-12 h-12 bg-white/10 backdrop-blur-sm text-white rounded-xl flex items-center justify-center group-hover:bg-red-600 transition-colors duration-300">
+                        <div className="mb-4 w-12 h-12 bg-white/10 backdrop-blur-sm text-white rounded-xl flex items-center justify-center group-hover:bg-amber-500 transition-colors duration-300">
                             {item.icon}
                         </div>
-                        <h3 className="font-bold text-white text-lg leading-snug group-hover:text-red-100 transition-colors">
+                        <h3 className="font-bold text-white text-lg leading-snug group-hover:text-amber-100 transition-colors">
                             {item.label}
                         </h3>
                     </div>
@@ -133,7 +133,7 @@ export default function OfferPage() {
                 <p className="text-zinc-400 text-lg leading-relaxed mb-8">
                     Każde zlecenie wyceniamy bezpłatnie. Dyspozytor dostępny 24h – zadzwoń: 508 313 906
                 </p>
-                <Link href="/kontakt" className="inline-block bg-red-600 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-white hover:text-red-600 transition-all">
+                <Link href="/kontakt" className="inline-block bg-amber-500 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-white hover:text-amber-500 transition-all">
                     Zamów wycenę
                 </Link>
             </div>

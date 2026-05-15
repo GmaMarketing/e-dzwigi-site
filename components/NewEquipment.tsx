@@ -48,7 +48,7 @@ export function NewEquipment() {
             transition={{ duration: 0.5 }}
             className="mb-5"
           >
-            <span className="inline-flex items-center gap-2 bg-red-600 text-white text-[10px] font-bold uppercase tracking-[0.3em] px-3 py-1.5">
+            <span className="inline-flex items-center gap-2 bg-amber-500 text-white text-[10px] font-bold uppercase tracking-[0.3em] px-3 py-1.5">
               NOWOŚĆ
             </span>
           </motion.div>
@@ -61,8 +61,8 @@ export function NewEquipment() {
             transition={{ duration: 0.65, delay: 0.08 }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <span className="h-[1px] w-12 bg-red-600" />
-              <span className="text-red-500 font-bold tracking-[0.3em] uppercase text-xs">ROZWIJAMY FLOTĘ</span>
+              <span className="h-[1px] w-12 bg-amber-500" />
+              <span className="text-amber-400 font-bold tracking-[0.3em] uppercase text-xs">ROZWIJAMY FLOTĘ</span>
             </div>
 
             <h2 className="font-heading font-black text-4xl md:text-5xl lg:text-6xl leading-[0.9] tracking-tight text-white mb-3">
@@ -100,7 +100,7 @@ export function NewEquipment() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.65, delay: 0.28 }}
-            className="text-zinc-400 max-w-md leading-relaxed text-sm mb-8 border-l-2 border-red-600 pl-5"
+            className="text-zinc-400 max-w-md leading-relaxed text-sm mb-8 border-l-2 border-amber-500 pl-5"
           >
             Firma się rozwija. Pozyskaliśmy nowy podnośnik koszowy Ruthmann TB 270.2 na podwoziu Nissana NT400 —
             większy zasięg, lepsza dostępność i więcej możliwości dla naszych klientów na Śląsku.
@@ -115,7 +115,7 @@ export function NewEquipment() {
           >
             <Link
               href="/kontakt#formularz"
-              className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-heading font-bold tracking-widest uppercase text-xs px-6 py-3 transition-colors duration-200"
+              className="inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-white font-heading font-bold tracking-widest uppercase text-xs px-6 py-3 transition-colors duration-200"
             >
               ZAPYTAJ O DOSTĘPNOŚĆ
               <ArrowRight size={14} />

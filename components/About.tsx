@@ -19,8 +19,8 @@ export function About() {
             {/* Left Content */}
             <div className="lg:w-1/2 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-8">
-                    <span className="h-[1px] w-12 bg-red-600" />
-                    <span className="text-red-600 font-bold tracking-[0.3em] uppercase text-xs">DLACZEGO KLIENCI NAM UFAJĄ</span>
+                    <span className="h-[1px] w-12 bg-amber-500" />
+                    <span className="text-amber-500 font-bold tracking-[0.3em] uppercase text-xs">DLACZEGO KLIENCI NAM UFAJĄ</span>
                 </div>
                 
                 <h2 className="font-heading font-black text-5xl md:text-7xl leading-[0.9] mb-12 tracking-tight">
@@ -42,7 +42,7 @@ export function About() {
                 <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
                     {highlights.map((item, i) => (
                         <div key={i} className="flex flex-col gap-4 p-6 bg-zinc-50 border border-zinc-100 rounded-sm">
-                            <div className="text-red-600">
+                            <div className="text-amber-500">
                                 {item.icon}
                             </div>
                             <span className="font-bold text-zinc-900 text-[10px] uppercase tracking-widest leading-tight">
@@ -66,7 +66,7 @@ export function About() {
                 </div>
                 
                 {/* Floating Stats Card - Positioned better */}
-                <div className="absolute -bottom-8 -left-8 bg-red-600 text-white p-10 shadow-2xl rounded-sm z-20">
+                <div className="absolute -bottom-8 -left-8 bg-amber-500 text-white p-10 shadow-2xl rounded-sm z-20">
                     <div className="font-heading font-black text-6xl mb-2">30+</div>
                     <div className="text-xs font-bold uppercase tracking-[0.2em] opacity-80 leading-snug">
                         Lat w branży <br /> dźwigowej

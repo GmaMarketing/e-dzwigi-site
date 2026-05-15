@@ -88,7 +88,7 @@ export function GalleryPreview() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-xl">
-            <span className="text-red-600 font-bold tracking-widest uppercase mb-4 block text-xs">
+            <span className="text-amber-500 font-bold tracking-widest uppercase mb-4 block text-xs">
               REALIZACJE
             </span>
             <h2 className="font-heading font-black text-4xl md:text-5xl text-zinc-900 leading-tight mb-4">
@@ -149,8 +149,8 @@ export function GalleryPreview() {
 
                 {/* Treść */}
                 <div className="absolute inset-0 flex flex-col justify-end p-5 md:p-6 z-20">
-                  <span className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-red-400 mb-2">
-                    <span className="w-3 h-[1.5px] bg-red-500" />
+                  <span className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-amber-300 mb-2">
+                    <span className="w-3 h-[1.5px] bg-amber-400" />
                     {cat.count} realizacji
                   </span>
                   <h3 className={`font-heading font-black text-white leading-tight mb-2 ${i === 0 ? "text-2xl md:text-3xl" : "text-base md:text-lg"}`}>

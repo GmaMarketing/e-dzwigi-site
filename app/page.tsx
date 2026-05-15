@@ -80,7 +80,7 @@ const localBusinessSchema = {
 
 export default function Home() {
   return (
-    <main className="bg-zinc-50 selection:bg-red-600 selection:text-white">
+    <main className="bg-zinc-50 selection:bg-amber-500 selection:text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}

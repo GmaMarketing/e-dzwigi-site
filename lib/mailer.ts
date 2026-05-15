@@ -44,10 +44,10 @@ export function buildEmail(opts: {
         <td style="background:#18181b;border-radius:16px 16px 0 0;padding:36px 32px;">
           <table cellpadding="0" cellspacing="0">
             <tr>
-              <td style="width:4px;background:#dc2626;border-radius:2px;vertical-align:top;">&nbsp;</td>
+              <td style="width:4px;background:#F59E0B;border-radius:2px;vertical-align:top;">&nbsp;</td>
               <td style="width:16px;"></td>
               <td>
-                <span style="display:block;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#dc2626;margin-bottom:6px;">${badge}</span>
+                <span style="display:block;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#F59E0B;margin-bottom:6px;">${badge}</span>
                 <span style="display:block;font-size:22px;font-weight:900;color:#ffffff;letter-spacing:-0.3px;">${heading}</span>
                 <span style="display:block;font-size:13px;color:#71717a;margin-top:4px;">${subheading}</span>
               </td>
@@ -69,7 +69,7 @@ export function buildEmail(opts: {
       <tr>
         <td style="background:#ffffff;border-radius:0 0 16px 16px;padding:28px 32px 36px;">
           <a href="tel:+48508313906"
-             style="display:inline-block;background:#dc2626;color:#ffffff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;padding:14px 28px;border-radius:10px;text-decoration:none;">
+             style="display:inline-block;background:#F59E0B;color:#ffffff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;padding:14px 28px;border-radius:10px;text-decoration:none;">
             ${ctaLabel}
           </a>
         </td>

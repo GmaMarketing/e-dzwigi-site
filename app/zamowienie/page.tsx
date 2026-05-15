@@ -77,20 +77,20 @@ export default function OrderPage() {
   }
 
   return (
-    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-red-600 selection:text-white">
+    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
       <Navbar />
 
       <div className="flex-grow pt-32 pb-20 container mx-auto px-6">
 
         {/* Breadcrumb / Back */}
-        <Link href="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-red-600 mb-8 transition-colors text-xs font-bold uppercase tracking-widest">
+        <Link href="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-amber-500 mb-8 transition-colors text-xs font-bold uppercase tracking-widest">
           <ArrowLeft size={16} />
           Powrót do strony głównej
         </Link>
 
         {/* Header */}
         <div className="mb-10">
-          <span className="text-red-600 font-bold tracking-widest uppercase mb-4 block">Dokumenty</span>
+          <span className="text-amber-500 font-bold tracking-widest uppercase mb-4 block">Dokumenty</span>
           <h1 className="text-4xl md:text-5xl font-heading font-black text-zinc-900 leading-tight mb-6">
             FORMULARZ ZAMÓWIENIA
           </h1>
@@ -123,11 +123,11 @@ export default function OrderPage() {
           </div>
 
           {/* Karta 2 – wyślij online (wyróżniona) */}
-          <div className="bg-white rounded-2xl border-2 border-red-600 p-8 flex flex-col relative shadow-lg shadow-red-600/10">
-            <span className="absolute -top-3 left-6 bg-red-600 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
+          <div className="bg-white rounded-2xl border-2 border-amber-500 p-8 flex flex-col relative shadow-lg shadow-amber-500/10">
+            <span className="absolute -top-3 left-6 bg-amber-500 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
               SZYBCIEJ
             </span>
-            <div className="p-3 bg-red-100 text-red-600 rounded-xl w-fit mb-5">
+            <div className="p-3 bg-amber-100 text-amber-500 rounded-xl w-fit mb-5">
               <FileText size={24} />
             </div>
             <h2 className="font-heading font-black text-xl text-zinc-900 mb-3">Wyślij formularz online</h2>
@@ -136,7 +136,7 @@ export default function OrderPage() {
             </p>
             <a
               href="#formularz-wysylki"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-red-600 text-white font-bold uppercase tracking-widest text-xs rounded-xl hover:bg-zinc-900 transition-all duration-300 shadow-lg shadow-red-600/25"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-500 text-white font-bold uppercase tracking-widest text-xs rounded-xl hover:bg-zinc-900 transition-all duration-300 shadow-lg shadow-amber-500/25"
             >
               WYŚLIJ ONLINE
               <ArrowRight size={16} />
@@ -151,7 +151,7 @@ export default function OrderPage() {
           {/* Toolbar */}
           <div className="border-b border-zinc-100 p-4 bg-zinc-50/50 flex justify-between items-center flex-wrap gap-4">
             <div className="flex items-center gap-4">
-              <div className="p-3 bg-red-100 text-red-600 rounded-xl">
+              <div className="p-3 bg-amber-100 text-amber-500 rounded-xl">
                 <FileText size={24} />
               </div>
               <div>
@@ -172,7 +172,7 @@ export default function OrderPage() {
               <a
                 href="/Zlecenie.pdf"
                 download="Zlecenie_hydromont.pdf"
-                className="flex items-center gap-2 px-5 py-2.5 bg-zinc-900 text-white hover:bg-red-600 text-xs font-bold uppercase tracking-widest rounded-xl transition-all shadow-lg hover:shadow-red-600/20"
+                className="flex items-center gap-2 px-5 py-2.5 bg-zinc-900 text-white hover:bg-amber-500 text-xs font-bold uppercase tracking-widest rounded-xl transition-all shadow-lg hover:shadow-amber-500/20"
               >
                 <Download size={16} />
                 <span>Pobierz</span>
@@ -211,13 +211,13 @@ export default function OrderPage() {
             <div className={`absolute inset-0 z-30 flex flex-col items-center justify-center transition-opacity duration-300 ${isLoading ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
               {pdfSrc ? (
                 <>
-                  <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-red-600 mb-4" />
+                  <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-amber-500 mb-4" />
                   <span className="text-zinc-500 font-bold mb-2">Ładowanie podglądu...</span>
                   <span className="text-zinc-400 text-sm">Jeśli podgląd się nie wyświetla, użyj przycisku Pobierz.</span>
                 </>
               ) : (
                 <>
-                  <div className="p-4 bg-red-100 text-red-600 rounded-2xl mb-4">
+                  <div className="p-4 bg-amber-100 text-amber-500 rounded-2xl mb-4">
                     <FileText size={32} />
                   </div>
                   <span className="text-zinc-500 font-bold mb-1">Przewiń, aby załadować podgląd</span>
@@ -250,7 +250,7 @@ export default function OrderPage() {
                 <p className="font-bold text-zinc-900 text-lg mb-1">Zlecenie wysłane!</p>
                 <p className="text-zinc-500">
                   Oddzwonimy do Ciebie tego samego dnia. W pilnych sprawach:{" "}
-                  <a href="tel:+48508313906" className="text-red-600 font-bold hover:underline">508 313 906</a>
+                  <a href="tel:+48508313906" className="text-amber-500 font-bold hover:underline">508 313 906</a>
                 </p>
               </div>
             </div>
@@ -264,14 +264,14 @@ export default function OrderPage() {
                 {/* Imię i nazwisko / Firma */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-bold text-zinc-700 mb-2">
-                    Imię i nazwisko / Firma <span className="text-red-600">*</span>
+                    Imię i nazwisko / Firma <span className="text-amber-500">*</span>
                   </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     required
-                    className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                    className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
                     placeholder="Jan Kowalski"
                   />
                 </div>
@@ -279,14 +279,14 @@ export default function OrderPage() {
                 {/* Telefon */}
                 <div>
                   <label htmlFor="phone" className="block text-sm font-bold text-zinc-700 mb-2">
-                    Telefon kontaktowy <span className="text-red-600">*</span>
+                    Telefon kontaktowy <span className="text-amber-500">*</span>
                   </label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
                     required
-                    className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                    className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
                     placeholder="np. 500 100 200"
                   />
                 </div>
@@ -295,14 +295,14 @@ export default function OrderPage() {
               {/* E-mail */}
               <div className="mb-5">
                 <label htmlFor="email" className="block text-sm font-bold text-zinc-700 mb-2">
-                  E-mail <span className="text-red-600">*</span>
+                  E-mail <span className="text-amber-500">*</span>
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   required
-                  className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                  className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
                   placeholder="na który wyślemy potwierdzenie"
                 />
               </div>
@@ -317,7 +317,7 @@ export default function OrderPage() {
                   id="attachment"
                   name="attachment"
                   accept=".pdf"
-                  className="w-full cursor-pointer rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 file:mr-4 file:cursor-pointer file:rounded-lg file:border-0 file:bg-zinc-900 file:px-4 file:py-1.5 file:text-xs file:font-bold file:uppercase file:tracking-wider file:text-white file:transition-all hover:file:bg-red-600 outline-none focus:border-red-600 focus:ring-2 focus:ring-red-600/20 transition-all"
+                  className="w-full cursor-pointer rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 file:mr-4 file:cursor-pointer file:rounded-lg file:border-0 file:bg-zinc-900 file:px-4 file:py-1.5 file:text-xs file:font-bold file:uppercase file:tracking-wider file:text-white file:transition-all hover:file:bg-amber-500 outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all"
                 />
                 <p className="text-xs text-zinc-400 mt-1.5">
                   Jeśli wypełniłeś PDF offline – możesz go tutaj załączyć
@@ -333,7 +333,7 @@ export default function OrderPage() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="w-full resize-none rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                  className="w-full resize-none rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
                   placeholder="Dodatkowe informacje do zlecenia"
                 />
               </div>
@@ -345,17 +345,17 @@ export default function OrderPage() {
                     type="checkbox"
                     name="rodo"
                     required
-                    className="mt-0.5 w-5 h-5 shrink-0 accent-red-600 cursor-pointer"
+                    className="mt-0.5 w-5 h-5 shrink-0 accent-amber-500 cursor-pointer"
                   />
                   <span className="text-sm text-zinc-500 group-hover:text-zinc-700 transition-colors leading-relaxed">
                     Wyrażam zgodę na przetwarzanie danych osobowych w celu realizacji zlecenia.
-                    <span className="text-red-600 ml-1">*</span>
+                    <span className="text-amber-500 ml-1">*</span>
                   </span>
                 </label>
               </div>
 
               {formStatus === "error" && (
-                <p className="mb-5 text-sm text-red-600 font-bold bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                <p className="mb-5 text-sm text-amber-500 font-bold bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
                   Wystąpił błąd. Spróbuj ponownie lub zadzwoń: 508 313 906
                 </p>
               )}
@@ -363,7 +363,7 @@ export default function OrderPage() {
               <button
                 type="submit"
                 disabled={formStatus === "sending"}
-                className="inline-flex items-center gap-2 bg-red-600 text-white font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-xl hover:bg-zinc-900 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg shadow-red-600/25"
+                className="inline-flex items-center gap-2 bg-amber-500 text-white font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-xl hover:bg-zinc-900 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed shadow-lg shadow-amber-500/25"
               >
                 {formStatus === "sending" ? (
                   <>
@@ -383,17 +383,17 @@ export default function OrderPage() {
         {/* ── KROKI ── */}
         <div className="mt-14 grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-2xl border border-zinc-100">
-            <span className="text-4xl font-black text-red-600 mb-4 block">01</span>
+            <span className="text-4xl font-black text-amber-500 mb-4 block">01</span>
             <h3 className="font-bold text-zinc-900 mb-2">Wypełnij formularz</h3>
             <p className="text-sm text-zinc-500">Uzupełnij dane w dokumencie bezpośrednio w przeglądarce.</p>
           </div>
           <div className="bg-white p-6 rounded-2xl border border-zinc-100">
-            <span className="text-4xl font-black text-red-600 mb-4 block">02</span>
+            <span className="text-4xl font-black text-amber-500 mb-4 block">02</span>
             <h3 className="font-bold text-zinc-900 mb-2">Wyślij dane kontaktowe</h3>
             <p className="text-sm text-zinc-500">Podaj telefon i mail – skontaktujemy się tego samego dnia.</p>
           </div>
           <div className="bg-white p-6 rounded-2xl border border-zinc-100">
-            <span className="text-4xl font-black text-red-600 mb-4 block">03</span>
+            <span className="text-4xl font-black text-amber-500 mb-4 block">03</span>
             <h3 className="font-bold text-zinc-900 mb-2">Dźwig jedzie do Ciebie</h3>
             <p className="text-sm text-zinc-500">Ustalamy szczegóły i przyjeżdżamy na miejsce realizacji.</p>
           </div>

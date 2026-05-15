@@ -24,14 +24,14 @@ export function CookieConsent() {
       <div className="mx-auto max-w-4xl rounded-3xl border border-zinc-800 bg-slate-950/95 p-6 text-slate-200 shadow-2xl backdrop-blur">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
-            <p className="mb-2 text-sm font-black uppercase tracking-[0.2em] text-red-500">
+            <p className="mb-2 text-sm font-black uppercase tracking-[0.2em] text-amber-400">
               Cookies i prywatnosc
             </p>
             <p className="text-sm leading-relaxed text-slate-300">
               Strona korzysta z niezbednych plikow cookies do zapamietania Twojej decyzji
               oraz moze ladowac tresci zewnetrzne, takie jak mapa Google. Szczegoly
               znajdziesz w{" "}
-              <Link href="/polityka-prywatnosci" className="font-bold text-white hover:text-red-400">
+              <Link href="/polityka-prywatnosci" className="font-bold text-white hover:text-amber-300">
                 polityce prywatnosci
               </Link>
               .
@@ -49,7 +49,7 @@ export function CookieConsent() {
             <button
               type="button"
               onClick={() => writeCookieConsent("accepted")}
-              className="rounded-xl bg-red-600 px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-red-500"
+              className="rounded-xl bg-amber-500 px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-amber-400"
             >
               Akceptuj
             </button>

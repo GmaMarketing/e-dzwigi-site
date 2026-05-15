@@ -117,13 +117,13 @@ export function Navbar() {
                         href={item.href}
                         className={`inline-flex items-center gap-1 px-2.5 xl:px-4 py-1.5 text-[9px] xl:text-[10px] font-bold uppercase tracking-wider rounded-full transition-all duration-300 ${
                             isSolid
-                                ? "text-zinc-600 hover:bg-white hover:text-red-600 hover:shadow-sm"
+                                ? "text-zinc-600 hover:bg-white hover:text-amber-500 hover:shadow-sm"
                                 : "text-white/80 hover:bg-white/10 hover:text-white"
                         }`}
                     >
                         {item.name}
                         {item.badge && (
-                            <span className="inline-flex items-center bg-red-600 text-white text-[6px] font-bold uppercase tracking-wide px-1 py-[2px] rounded-full leading-none shrink-0 self-center">
+                            <span className="inline-flex items-center bg-amber-500 text-white text-[6px] font-bold uppercase tracking-wide px-1 py-[2px] rounded-full leading-none shrink-0 self-center">
                                 {item.badge}
                             </span>
                         )}
@@ -140,7 +140,7 @@ export function Navbar() {
                     }`}
                 >
                     <span className="text-[8px] uppercase font-bold tracking-widest opacity-60 whitespace-nowrap">Dyspozytor 24h</span>
-                    <span className="font-heading font-black text-sm group-hover:text-red-600 transition-colors tracking-tight whitespace-nowrap">
+                    <span className="font-heading font-black text-sm group-hover:text-amber-500 transition-colors tracking-tight whitespace-nowrap">
                         508 313 906
                     </span>
                 </a>
@@ -150,8 +150,8 @@ export function Navbar() {
                     font-bold text-[10px] uppercase tracking-widest
                     transition-all duration-300 rounded-lg
                     ${isSolid
-                        ? "bg-zinc-900 text-white hover:bg-red-600"
-                        : "bg-white text-zinc-900 hover:bg-red-600 hover:text-white"
+                        ? "bg-zinc-900 text-white hover:bg-amber-500"
+                        : "bg-white text-zinc-900 hover:bg-amber-500 hover:text-white"
                     }
                 `}>
                     <span>Kontakt</span>
@@ -201,7 +201,7 @@ export function Navbar() {
                             >
                                 {item.name}
                                 {item.badge && (
-                                    <span className="bg-red-600 text-white text-[10px] font-sans font-bold uppercase tracking-wider px-2 py-1 rounded-full leading-none">
+                                    <span className="bg-amber-500 text-white text-[10px] font-sans font-bold uppercase tracking-wider px-2 py-1 rounded-full leading-none">
                                         {item.badge}
                                     </span>
                                 )}
@@ -215,7 +215,7 @@ export function Navbar() {
                     
                     <a href="tel:+48508313906" className="block">
                         <span className="text-xs font-bold uppercase tracking-widest text-zinc-400 block mb-1">Dyspozytor 24h</span>
-                        <span className="text-2xl font-heading font-black text-red-600 block">508 313 906</span>
+                        <span className="text-2xl font-heading font-black text-amber-500 block">508 313 906</span>
                     </a>
 
                     <Link

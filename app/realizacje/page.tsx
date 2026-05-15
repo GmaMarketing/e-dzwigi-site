@@ -162,20 +162,20 @@ export default function RealizacjePage() {
   }, []);
 
   return (
-    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-red-600 selection:text-white">
+    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
       <Navbar />
 
       <div className="flex-grow pt-32 pb-20 container mx-auto px-6">
 
         {/* Back link */}
-        <Link href="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-red-600 mb-8 transition-colors text-xs font-bold uppercase tracking-widest">
+        <Link href="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-amber-500 mb-8 transition-colors text-xs font-bold uppercase tracking-widest">
           <ArrowLeft size={16} />
           Powrót do strony głównej
         </Link>
 
         {/* Header */}
         <div className="mb-12 max-w-3xl">
-          <span className="text-red-600 font-bold tracking-widest uppercase mb-4 block">ZREALIZOWANE ZLECENIA</span>
+          <span className="text-amber-500 font-bold tracking-widest uppercase mb-4 block">ZREALIZOWANE ZLECENIA</span>
           <h1 className="text-4xl md:text-5xl font-heading font-black text-zinc-900 leading-tight mb-6">
             DŹWIGI W AKCJI NA ŚLĄSKU
           </h1>
@@ -203,7 +203,7 @@ export default function RealizacjePage() {
             className="w-full flex items-center justify-between bg-zinc-900 text-white px-8 py-6 rounded-2xl hover:bg-zinc-800 transition-colors group"
           >
             <div className="flex items-center gap-5">
-              <SlidersHorizontal size={24} className="text-red-500 shrink-0" />
+              <SlidersHorizontal size={24} className="text-amber-400 shrink-0" />
               <div className="text-left">
                 <span className="block text-xs font-black uppercase tracking-widest text-zinc-500 leading-none mb-1.5">
                   Filtrujesz
@@ -215,7 +215,7 @@ export default function RealizacjePage() {
               {activeFilter !== "all" && (
                 <button
                   onClick={(e) => { e.stopPropagation(); setActiveFilter("all"); setSelectedImage(null); }}
-                  className="ml-2 text-[10px] font-black uppercase tracking-widest text-red-500 hover:text-red-400 border border-red-500/30 hover:border-red-400 px-3 py-1 rounded-full transition-colors"
+                  className="ml-2 text-[10px] font-black uppercase tracking-widest text-amber-400 hover:text-amber-300 border border-amber-400/30 hover:border-amber-300 px-3 py-1 rounded-full transition-colors"
                 >
                   Wyczyść
                 </button>
@@ -258,7 +258,7 @@ export default function RealizacjePage() {
                 {/* RODZAJ SPRZĘTU */}
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="w-6 h-[2px] bg-red-600" />
+                    <span className="w-6 h-[2px] bg-amber-500" />
                     <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
                       Rodzaj sprzętu
                     </span>
@@ -273,11 +273,11 @@ export default function RealizacjePage() {
                           onClick={() => { setActiveFilter(f.id); setSelectedImage(null); setPanelOpen(false); }}
                           className={`group relative flex flex-col items-start p-4 rounded-xl border text-left transition-all duration-200 ${
                             active
-                              ? "bg-red-600 border-red-600 shadow-lg shadow-red-600/20"
-                              : "bg-zinc-800 border-zinc-700 hover:border-red-600/50 hover:bg-zinc-750"
+                              ? "bg-amber-500 border-amber-500 shadow-lg shadow-amber-500/20"
+                              : "bg-zinc-800 border-zinc-700 hover:border-amber-500/50 hover:bg-zinc-750"
                           }`}
                         >
-                          <span className={`text-2xl font-black leading-none mb-2 ${active ? "text-white" : "text-zinc-600 group-hover:text-red-600 transition-colors"}`}>
+                          <span className={`text-2xl font-black leading-none mb-2 ${active ? "text-white" : "text-zinc-600 group-hover:text-amber-500 transition-colors"}`}>
                             {f.id === "m21" && "21m"}
                             {f.id === "m26" && "26m"}
                             {f.id === "m27" && "27m"}
@@ -288,7 +288,7 @@ export default function RealizacjePage() {
                           <span className={`text-xs font-bold leading-tight ${active ? "text-white" : "text-zinc-300"}`}>
                             {f.label}
                           </span>
-                          <span className={`mt-2 text-[10px] font-black uppercase tracking-widest ${active ? "text-red-200" : "text-zinc-600"}`}>
+                          <span className={`mt-2 text-[10px] font-black uppercase tracking-widest ${active ? "text-amber-200" : "text-zinc-600"}`}>
                             {count} zdjęć
                           </span>
                         </button>
@@ -393,7 +393,7 @@ export default function RealizacjePage() {
             </p>
             <Link
               href="/kontakt"
-              className="inline-flex items-center gap-3 bg-red-600 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-white hover:text-red-600 transition-all"
+              className="inline-flex items-center gap-3 bg-amber-500 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-white hover:text-amber-500 transition-all"
             >
               ZAMÓW DŹWIG
               <ArrowRight size={16} />

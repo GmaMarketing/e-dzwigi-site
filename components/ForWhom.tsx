@@ -37,8 +37,8 @@ export function ForWhom() {
         {/* Header */}
         <div className="max-w-3xl mb-16">
             <div className="flex items-center gap-3 mb-6">
-                <span className="h-[1px] w-12 bg-red-600" />
-                <span className="text-red-600 font-bold tracking-[0.3em] uppercase text-xs">Obsługujemy każde zlecenie</span>
+                <span className="h-[1px] w-12 bg-amber-500" />
+                <span className="text-amber-500 font-bold tracking-[0.3em] uppercase text-xs">Obsługujemy każde zlecenie</span>
             </div>
             <h2 className="font-heading font-black text-4xl md:text-5xl leading-tight mb-6">
                 DLA KOGO <br />
@@ -55,9 +55,9 @@ export function ForWhom() {
                 <Link
                     key={i}
                     href="/kontakt#formularz"
-                    className="group p-8 bg-zinc-800/50 border border-white/5 hover:border-red-600/50 hover:bg-zinc-800 transition-all duration-300 rounded-2xl"
+                    className="group p-8 bg-zinc-800/50 border border-white/5 hover:border-amber-500/50 hover:bg-zinc-800 transition-all duration-300 rounded-2xl"
                 >
-                    <div className="mb-6 text-red-600 group-hover:scale-110 transition-transform duration-300 bg-red-600/10 w-16 h-16 rounded-xl flex items-center justify-center">
+                    <div className="mb-6 text-amber-500 group-hover:scale-110 transition-transform duration-300 bg-amber-500/10 w-16 h-16 rounded-xl flex items-center justify-center">
                         {item.icon}
                     </div>
                     <h3 className="font-heading font-bold text-xl text-white mb-3">
@@ -66,7 +66,7 @@ export function ForWhom() {
                     <p className="text-zinc-400 text-sm leading-relaxed mb-4">
                         {item.desc}
                     </p>
-                    <span className="text-red-500 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-amber-400 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Zapytaj o wycenę →
                     </span>
                 </Link>

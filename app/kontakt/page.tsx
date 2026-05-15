@@ -56,20 +56,20 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-red-600 selection:text-white">
+    <main className="bg-zinc-50 min-h-screen flex flex-col selection:bg-amber-500 selection:text-white">
       <Navbar />
 
       <div className="flex-grow pt-32 pb-0">
         <div className="container mx-auto px-6 mb-16">
           {/* Breadcrumb / Back */}
-          <Link href="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-red-600 mb-8 transition-colors text-xs font-bold uppercase tracking-widest">
+          <Link href="/" className="inline-flex items-center gap-2 text-zinc-500 hover:text-amber-500 mb-8 transition-colors text-xs font-bold uppercase tracking-widest">
               <ArrowLeft size={16} />
               Powrót do strony głównej
           </Link>
 
           {/* Header */}
           <div className="mb-10">
-            <span className="text-red-600 font-bold tracking-widest uppercase mb-4 block">Kontakt</span>
+            <span className="text-amber-500 font-bold tracking-widest uppercase mb-4 block">Kontakt</span>
             <h1 className="text-4xl md:text-5xl font-heading font-black text-zinc-900 leading-tight mb-6">
                 ZAMÓW DŹWIG LUB ZAPYTAJ <br /> O WYCENĘ
             </h1>
@@ -92,12 +92,12 @@ export default function ContactPage() {
                   <p className="font-bold text-zinc-900 text-lg mb-1">Wiadomość wysłana!</p>
                   <p className="text-zinc-500">
                     Odpowiemy tego samego dnia. W pilnych sprawach:{" "}
-                    <a href="tel:+48508313906" className="text-red-600 font-bold hover:underline">508 313 906</a>
+                    <a href="tel:+48508313906" className="text-amber-500 font-bold hover:underline">508 313 906</a>
                   </p>
                 </div>
                 <button
                   onClick={() => setFormStatus("idle")}
-                  className="mt-4 text-sm font-bold text-red-600 hover:underline uppercase tracking-widest"
+                  className="mt-4 text-sm font-bold text-amber-500 hover:underline uppercase tracking-widest"
                 >
                   Wyślij kolejną wiadomość
                 </button>
@@ -110,7 +110,7 @@ export default function ContactPage() {
               >
 
                 <h3 className="font-heading font-bold text-xl text-zinc-900 mb-6 flex items-center gap-3">
-                    <span className="w-8 h-[2px] bg-red-600"></span>
+                    <span className="w-8 h-[2px] bg-amber-500"></span>
                     Formularz kontaktowy
                 </h3>
                 <div className="space-y-4 flex-grow flex flex-col">
@@ -121,7 +121,7 @@ export default function ContactPage() {
                       id="name"
                       name="name"
                       required
-                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
                       placeholder="Jan Kowalski"
                     />
                   </div>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                       id="email"
                       name="email"
                       required
-                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
                       placeholder="jan@example.com"
                     />
                   </div>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                       type="tel"
                       id="phone"
                       name="phone"
-                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
                       placeholder="508 313 906"
                     />
                   </div>
@@ -152,7 +152,7 @@ export default function ContactPage() {
                       type="text"
                       id="company"
                       name="company"
-                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                      className="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
                       placeholder="Nazwa firmy"
                     />
                   </div>
@@ -162,7 +162,7 @@ export default function ContactPage() {
                       id="message"
                       name="message"
                       required
-                      className="h-full min-h-[120px] w-full resize-none rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-red-600 focus:ring-2 focus:ring-red-600/20 outline-none transition-all"
+                      className="h-full min-h-[120px] w-full resize-none rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
                       placeholder="Opisz zlecenie – rodzaj pracy, miasto, orientacyjny termin"
                     />
                   </div>
@@ -172,17 +172,17 @@ export default function ContactPage() {
                         type="checkbox"
                         name="rodo"
                         required
-                        className="mt-[2px] h-4 w-4 shrink-0 accent-red-600 cursor-pointer"
+                        className="mt-[2px] h-4 w-4 shrink-0 accent-amber-500 cursor-pointer"
                       />
                       <span className="text-xs leading-5 text-zinc-500 transition-colors group-hover:text-zinc-700">
                         Wyrażam zgodę na przetwarzanie danych osobowych w celu realizacji zapytania.
-                        <span className="text-red-600 ml-1">*</span>
+                        <span className="text-amber-500 ml-1">*</span>
                       </span>
                     </label>
                   </div>
 
                   {formStatus === "error" && (
-                    <p className="text-sm text-red-600 font-bold bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                    <p className="text-sm text-amber-500 font-bold bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
                       Wystąpił błąd. Spróbuj ponownie lub zadzwoń: 508 313 906
                     </p>
                   )}
@@ -190,7 +190,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={formStatus === "sending"}
-                    className="w-full bg-red-600 text-white font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-xl hover:bg-zinc-900 transition-all duration-300 mt-6 disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full bg-amber-500 text-white font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-xl hover:bg-zinc-900 transition-all duration-300 mt-6 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {formStatus === "sending" ? (
                       <span className="inline-flex items-center gap-2">
@@ -221,7 +221,7 @@ export default function ContactPage() {
                 ) : (
                   <div className="absolute inset-0 flex flex-col justify-between bg-zinc-100 p-6">
                     <div className="max-w-md">
-                      <span className="inline-flex rounded-full bg-red-100 px-3 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-red-600">
+                      <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-amber-500">
                         Zgoda na cookies
                       </span>
                       <h2 className="mt-4 text-2xl font-heading font-black text-zinc-900">
@@ -240,7 +240,7 @@ export default function ContactPage() {
                           writeCookieConsent("accepted");
                           setIsMapEnabled(true);
                         }}
-                        className="inline-flex items-center justify-center rounded-xl bg-red-600 px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-zinc-900"
+                        className="inline-flex items-center justify-center rounded-xl bg-amber-500 px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-zinc-900"
                       >
                         Akceptuj i pokaz mape
                       </button>
@@ -259,7 +259,7 @@ export default function ContactPage() {
                 {/* Overlay Card on Map */}
                 <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-white/50">
                     <div className="flex items-start gap-3">
-                        <div className="bg-red-600 text-white p-2 rounded-lg shrink-0">
+                        <div className="bg-amber-500 text-white p-2 rounded-lg shrink-0">
                             <MapPin size={18} />
                         </div>
                         <div>
@@ -269,7 +269,7 @@ export default function ContactPage() {
                                 href="https://www.google.com/maps/place/Us%C5%82ugi+D%C5%BAwigowe+Hydromont+s.c./@50.148654,18.950135,15z/data=!4m6!3m5!1s0x4716b7f0c4075e8d:0x7f2c6a6a63c0477c!8m2!3d50.1486536!4d18.9501348!16s%2Fg%2F1q6b677dx"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold text-red-600 uppercase tracking-wider hover:underline"
+                                className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold text-amber-500 uppercase tracking-wider hover:underline"
                             >
                                 Jak dojechać? <ArrowRight size={10} />
                             </a>
@@ -286,7 +286,7 @@ export default function ContactPage() {
             {/* Company Details */}
             <div className="bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm">
                 <h3 className="font-heading font-bold text-xl text-zinc-900 mb-6 flex items-center gap-3">
-                    <span className="w-8 h-[2px] bg-red-600"></span>
+                    <span className="w-8 h-[2px] bg-amber-500"></span>
                     Dane Firmy
                 </h3>
                 <address className="not-italic text-zinc-600 space-y-2">
@@ -313,7 +313,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               <div className="grid sm:grid-cols-2 gap-4">
                    {/* Phone */}
-                   <a href="tel:+48508313906" className="group bg-zinc-900 text-white p-6 rounded-2xl hover:bg-red-600 transition-all duration-300 shadow-lg hover:shadow-red-600/30">
+                   <a href="tel:+48508313906" className="group bg-zinc-900 text-white p-6 rounded-2xl hover:bg-amber-500 transition-all duration-300 shadow-lg hover:shadow-amber-500/30">
                       <div className="mb-4 text-white/50 group-hover:text-white transition-colors">
                           <Phone size={24} />
                       </div>
@@ -332,12 +332,12 @@ export default function ContactPage() {
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
-                  <a href="mailto:biuro@e-dzwigi.pl" className="group bg-white border border-zinc-200 p-6 rounded-2xl hover:border-red-600/50 hover:bg-red-50/50 transition-all duration-300">
-                       <div className="mb-4 text-red-600">
+                  <a href="mailto:biuro@e-dzwigi.pl" className="group bg-white border border-zinc-200 p-6 rounded-2xl hover:border-amber-500/50 hover:bg-amber-50/50 transition-all duration-300">
+                       <div className="mb-4 text-amber-500">
                           <Mail size={24} />
                       </div>
                       <span className="block text-[10px] uppercase font-bold tracking-widest text-zinc-400 mb-1">Email</span>
-                      <span className="block text-lg font-bold text-zinc-900 group-hover:text-red-600 transition-colors">biuro@e-dzwigi.pl</span>
+                      <span className="block text-lg font-bold text-zinc-900 group-hover:text-amber-500 transition-colors">biuro@e-dzwigi.pl</span>
                   </a>
 
                   <a href="https://www.facebook.com/people/Us%C5%82ugi-D%C5%BAwigowe-Hydromont-SC/61556393884660/" target="_blank" rel="noopener noreferrer" className="group bg-[#1877F2] text-white p-6 rounded-2xl hover:bg-[#166fe5] transition-all duration-300 shadow-lg hover:shadow-[#1877F2]/30">

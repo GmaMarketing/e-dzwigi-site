@@ -38,7 +38,7 @@ export function Hero() {
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                className="text-red-500 font-bold tracking-[0.3em] uppercase text-sm"
+                className="text-amber-400 font-bold tracking-[0.3em] uppercase text-sm"
             >
                 WYNAJEM DŹWIGÓW NA ŚLĄSKU · DOSTĘPNE 24H
             </motion.p>
@@ -56,7 +56,7 @@ export function Hero() {
             </motion.h1>
         </div>
         
-        <div className="overflow-hidden max-w-2xl border-l-2 border-red-600 pl-4 md:pl-8">
+        <div className="overflow-hidden max-w-2xl border-l-2 border-amber-500 pl-4 md:pl-8">
              <motion.p
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
@@ -75,7 +75,7 @@ export function Hero() {
           >
             <Link
               href="/kontakt#formularz"
-              className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-heading font-bold tracking-widest uppercase text-sm px-8 py-4 transition-colors duration-200"
+              className="inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-white font-heading font-bold tracking-widest uppercase text-sm px-8 py-4 transition-colors duration-200"
             >
               ZAMÓW DŹWIG
             </Link>
@@ -90,7 +90,7 @@ export function Hero() {
         className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/30 flex flex-col items-center gap-4"
       >
           <span className="text-[10px] uppercase tracking-[0.4em] font-bold">Przewiń</span>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-red-600 to-transparent" />
+          <div className="w-[1px] h-12 bg-gradient-to-b from-amber-500 to-transparent" />
       </motion.div>
 
     </section>

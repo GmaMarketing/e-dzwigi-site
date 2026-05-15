@@ -97,8 +97,8 @@ export function FleetHorizontal() {
       <section className="bg-zinc-50 py-20 md:hidden" id="flota">
         <div className="container mx-auto px-6 mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <span className="h-[1px] w-12 bg-red-600" />
-            <span className="text-red-600 font-bold tracking-[0.3em] uppercase text-xs">PARK MASZYNOWY</span>
+            <span className="h-[1px] w-12 bg-amber-500" />
+            <span className="text-amber-500 font-bold tracking-[0.3em] uppercase text-xs">PARK MASZYNOWY</span>
           </div>
           <h2 className="text-4xl font-heading font-black text-zinc-900 leading-none">FLOTA</h2>
         </div>
@@ -111,18 +111,18 @@ export function FleetHorizontal() {
               </div>
               <div className="p-8">
                 {m.isNew && (
-                  <span className="inline-block bg-red-600 text-white text-[10px] font-bold uppercase tracking-[0.3em] px-3 py-1 mb-3">
+                  <span className="inline-block bg-amber-500 text-white text-[10px] font-bold uppercase tracking-[0.3em] px-3 py-1 mb-3">
                     NOWOŚĆ
                   </span>
                 )}
                 <h3 className="text-3xl font-heading font-black text-zinc-900 mb-2">{m.displayName}</h3>
                 <p className="text-lg text-zinc-500 font-medium mb-2">{m.displayType}</p>
-                <p className="text-4xl font-heading font-black text-red-600/80 mb-4 leading-none">{m.meter}</p>
+                <p className="text-4xl font-heading font-black text-amber-500/80 mb-4 leading-none">{m.meter}</p>
                 <div className="flex flex-wrap gap-4 mb-6">
                   <div className="px-3 py-1 border border-zinc-300 rounded-full text-zinc-700 font-mono text-xs">{m.shortSpecs}</div>
-                  <div className="px-3 py-1 border border-red-600 bg-red-600/10 text-red-600 rounded-full font-mono text-xs uppercase tracking-wider">Dostępny</div>
+                  <div className="px-3 py-1 border border-amber-500 bg-amber-500/10 text-amber-500 rounded-full font-mono text-xs uppercase tracking-wider">Dostępny</div>
                 </div>
-                <Link href={`/flota/${m.slug}`} title={`Szczegóły: ${m.model}`} className="block w-full py-4 bg-red-600 text-white rounded-xl font-bold uppercase tracking-widest hover:bg-red-700 transition-colors text-center">
+                <Link href={`/flota/${m.slug}`} title={`Szczegóły: ${m.model}`} className="block w-full py-4 bg-amber-500 text-white rounded-xl font-bold uppercase tracking-widest hover:bg-amber-600 transition-colors text-center">
                   Szczegóły
                 </Link>
               </div>
@@ -143,8 +143,8 @@ export function FleetHorizontal() {
           <div ref={headerRef} className="shrink-0 flex items-end justify-between gap-6 mb-6 lg:mb-8">
             <div>
               <div className="flex items-center gap-3 mb-3">
-                <span className="h-[1px] w-12 bg-red-600" />
-                <span className="text-red-600 font-bold tracking-[0.3em] uppercase text-xs">PARK MASZYNOWY</span>
+                <span className="h-[1px] w-12 bg-amber-500" />
+                <span className="text-amber-500 font-bold tracking-[0.3em] uppercase text-xs">PARK MASZYNOWY</span>
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black text-zinc-900 leading-none tracking-tight">
                 FLOTA
@@ -163,17 +163,17 @@ export function FleetHorizontal() {
             {/* Left: text */}
             <div ref={textRef} className="flex flex-col max-w-xl">
               {machine.isNew && (
-                <span className="inline-flex items-center bg-red-600 text-white text-[10px] font-bold uppercase tracking-[0.3em] px-3 py-1.5 mb-5 w-fit">
+                <span className="inline-flex items-center bg-amber-500 text-white text-[10px] font-bold uppercase tracking-[0.3em] px-3 py-1.5 mb-5 w-fit">
                   NOWOŚĆ
                 </span>
               )}
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-black text-zinc-900 leading-[0.95] tracking-tight mb-2">
                 {machine.displayName}
               </h3>
-              <p className="text-sm lg:text-base text-red-600 font-bold uppercase tracking-wider mb-5">
+              <p className="text-sm lg:text-base text-amber-500 font-bold uppercase tracking-wider mb-5">
                 {machine.displayType}
               </p>
-              <p className="text-sm lg:text-[15px] text-zinc-600 leading-relaxed border-l-2 border-red-600 pl-5 mb-6 line-clamp-3">
+              <p className="text-sm lg:text-[15px] text-zinc-600 leading-relaxed border-l-2 border-amber-500 pl-5 mb-6 line-clamp-3">
                 {machine.description}
               </p>
 
@@ -181,7 +181,7 @@ export function FleetHorizontal() {
                 <span className="px-3 py-1.5 border border-zinc-300 bg-white text-zinc-700 font-mono text-[11px] uppercase tracking-wider shadow-sm">
                   {machine.shortSpecs}
                 </span>
-                <span className="px-3 py-1.5 border border-red-600 bg-red-600/10 text-red-600 font-mono text-[11px] uppercase tracking-wider">
+                <span className="px-3 py-1.5 border border-amber-500 bg-amber-500/10 text-amber-500 font-mono text-[11px] uppercase tracking-wider">
                   Dostępny
                 </span>
               </div>
@@ -190,7 +190,7 @@ export function FleetHorizontal() {
                 <Link
                   href={`/flota/${machine.slug}`}
                   title={`Szczegóły: ${machine.model}`}
-                  className="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-heading font-bold tracking-widest uppercase text-xs px-6 py-3 transition-colors"
+                  className="inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-white font-heading font-bold tracking-widest uppercase text-xs px-6 py-3 transition-colors"
                 >
                   ZOBACZ SZCZEGÓŁY
                   <ArrowRight size={14} />
@@ -215,7 +215,7 @@ export function FleetHorizontal() {
                 {/* Decorative inner border */}
                 <div className="absolute top-5 left-5 right-5 bottom-5 border border-white/20 pointer-events-none" />
                 {/* Top-left meter badge */}
-                <div className="absolute top-6 left-6 bg-red-600 text-white py-2 px-4 shadow-lg">
+                <div className="absolute top-6 left-6 bg-amber-500 text-white py-2 px-4 shadow-lg">
                   <div className="font-heading font-black text-xl lg:text-2xl leading-none">
                     {machine.meter}
                   </div>
@@ -240,7 +240,7 @@ export function FleetHorizontal() {
                     onClick={() => { goTo(i); startInterval(); }}
                     aria-label={`Slajd ${i + 1}`}
                     className={`h-[2px] rounded-full transition-all duration-500 ${
-                      i === current ? "w-10 bg-red-600" : "w-2 bg-zinc-300 hover:bg-zinc-400"
+                      i === current ? "w-10 bg-amber-500" : "w-2 bg-zinc-300 hover:bg-zinc-400"
                     }`}
                   />
                 ))}
@@ -249,14 +249,14 @@ export function FleetHorizontal() {
                 <button
                   onClick={() => { goTo(current - 1); startInterval(); }}
                   aria-label="Poprzedni slajd"
-                  className="w-11 h-11 lg:w-12 lg:h-12 border border-zinc-300 bg-white rounded-full flex items-center justify-center text-zinc-900 hover:border-red-600 hover:bg-red-600 hover:text-white transition-all duration-300 shadow-sm"
+                  className="w-11 h-11 lg:w-12 lg:h-12 border border-zinc-300 bg-white rounded-full flex items-center justify-center text-zinc-900 hover:border-amber-500 hover:bg-amber-500 hover:text-white transition-all duration-300 shadow-sm"
                 >
                   <ArrowLeft size={16} />
                 </button>
                 <button
                   onClick={() => { goTo(current + 1); startInterval(); }}
                   aria-label="Następny slajd"
-                  className="w-11 h-11 lg:w-12 lg:h-12 border border-zinc-300 bg-white rounded-full flex items-center justify-center text-zinc-900 hover:border-red-600 hover:bg-red-600 hover:text-white transition-all duration-300 shadow-sm"
+                  className="w-11 h-11 lg:w-12 lg:h-12 border border-zinc-300 bg-white rounded-full flex items-center justify-center text-zinc-900 hover:border-amber-500 hover:bg-amber-500 hover:text-white transition-all duration-300 shadow-sm"
                 >
                   <ArrowRight size={16} />
                 </button>
@@ -265,7 +265,7 @@ export function FleetHorizontal() {
             <div className="mt-4 lg:mt-5 h-[1px] bg-zinc-200 relative overflow-hidden">
               <div
                 ref={progressRef}
-                className="absolute inset-0 bg-red-600"
+                className="absolute inset-0 bg-amber-500"
                 style={{ transformOrigin: "left", transform: "scaleX(0)" }}
               />
             </div>
