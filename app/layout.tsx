@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Barlow_Condensed, Manrope } from "next/font/google";
 import "./globals.css";
-import { SmoothScroll } from "@/components/SmoothScroll";
 import { CookieConsent } from "@/components/CookieConsent";
 
 const siteUrl = "https://e-dzwigi.pl";
@@ -142,7 +141,7 @@ gtag('js', new Date());
 gtag('config', '${googleAnalyticsId}');`}</Script>
           </>
         ) : null}
-        <SmoothScroll>{children}</SmoothScroll>
+        {children}
         <CookieConsent />
       </body>
     </html>

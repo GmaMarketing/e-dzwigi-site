@@ -7,7 +7,7 @@ import { ArrowLeft, X, ChevronLeft, ChevronRight, ArrowRight, ChevronDown, Slide
 import Link from "next/link";
 import { useState, useEffect, useRef, useEffectEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useLenis } from "@/components/SmoothScroll";
+
 
 type ImgEntry = { file: string; folder?: string; category: string; overlay: string; alt: string };
 
@@ -130,8 +130,6 @@ export default function RealizacjePage() {
   const [panelOpen, setPanelOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const filterRef = useRef<HTMLDivElement>(null);
-  const lenis = useLenis();
-
   const filteredImages = activeFilter === "all"
     ? allImages
     : allImages.filter((img) => img.category.split(" ").includes(activeFilter));
@@ -194,12 +192,9 @@ export default function RealizacjePage() {
             onClick={() => {
               setPanelOpen((o) => {
                 const opening = !o;
-                if (opening && filterRef.current && lenis) {
+                if (opening && filterRef.current) {
                   setTimeout(() => {
-                    const el = filterRef.current!;
-                    const elRect = el.getBoundingClientRect();
-                    const target = window.scrollY + elRect.top + elRect.height / 2 - window.innerHeight / 2;
-                    lenis.scrollTo(target, { duration: 1.2 });
+                    filterRef.current!.scrollIntoView({ behavior: "smooth", block: "center" });
                   }, 50);
                 }
                 return opening;

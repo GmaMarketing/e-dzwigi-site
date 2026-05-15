@@ -2,7 +2,6 @@
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { useLenis } from "@/components/SmoothScroll";
 import { Download, FileText, ArrowLeft, Printer, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
@@ -11,23 +10,18 @@ export default function OrderPage() {
   const [pdfSrc, setPdfSrc] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
-  const lenis = useLenis();
   const pdfContainerRef = useRef<HTMLDivElement>(null);
   const unlockScrollTimeoutRef = useRef<number | null>(null);
 
   function lockPageScrollTemporarily() {
-    if (!lenis) {
-      return;
-    }
-
-    lenis.stop();
+    document.body.style.overflow = "hidden";
 
     if (unlockScrollTimeoutRef.current !== null) {
       window.clearTimeout(unlockScrollTimeoutRef.current);
     }
 
     unlockScrollTimeoutRef.current = window.setTimeout(() => {
-      lenis.start();
+      document.body.style.overflow = "";
       unlockScrollTimeoutRef.current = null;
     }, 250);
   }
@@ -54,10 +48,9 @@ export default function OrderPage() {
       if (unlockScrollTimeoutRef.current !== null) {
         window.clearTimeout(unlockScrollTimeoutRef.current);
       }
-
-      lenis?.start();
+      document.body.style.overflow = "";
     };
-  }, [lenis]);
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
