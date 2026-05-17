@@ -77,7 +77,7 @@ export function FleetGrid() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="text-lg text-slate-500 leading-relaxed"
+                className="text-lg text-zinc-900 leading-relaxed"
             >
                 Dysponujemy nowoczesnym i regularnie serwisowanym sprzętem. 
                 Dobieramy maszynę idealnie do potrzeb Twojego zlecenia, optymalizując koszty.
@@ -117,14 +117,14 @@ export function FleetGrid() {
                         <h3 className="font-heading font-bold text-3xl text-slate-900 mb-4 group-hover:text-accent transition-colors">
                             {machine.name}
                         </h3>
-                        <p className="text-slate-500 text-sm leading-relaxed mb-8 border-b border-slate-100 pb-8">
+                        <p className="text-zinc-900 text-sm leading-relaxed mb-8 border-b border-slate-100 pb-8">
                             {machine.description}
                         </p>
 
                         <div className="space-y-4">
                             {machine.specs.map((spec, i) => (
                                 <div key={i} className="flex justify-between items-center text-sm">
-                                    <span className="text-slate-400 font-medium uppercase text-xs tracking-wider">{spec.label}</span>
+                                    <span className="text-zinc-700 font-medium uppercase text-xs tracking-wider">{spec.label}</span>
                                     <span className="font-bold text-slate-900 text-lg">{spec.value}</span>
                                 </div>
                             ))}

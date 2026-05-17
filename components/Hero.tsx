@@ -21,7 +21,7 @@ export function Hero() {
       {/* Background Image - Real Crane */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <Image
-          src="/background.png"
+          src="/background.webp"
           alt="Wynajem dźwigów samojezdnych na budowie – e-dzwigi.pl Tychy Śląsk"
           fill
           className="object-cover object-center brightness-[0.55]"
@@ -44,15 +44,16 @@ export function Hero() {
             </motion.p>
         </div>
 
-        <div className="overflow-hidden">
-            <motion.h1 
+        <div className="overflow-visible pr-6">
+            <motion.h1
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="font-heading font-black text-5xl md:text-8xl lg:text-[7.5rem] leading-[0.9] md:leading-[0.85] text-white tracking-tighter mb-8"
+                className="font-heading font-black leading-[0.95] tracking-tighter mb-8 pb-3 italic text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-500"
+                style={{ fontSize: "clamp(3rem, 10vw, 7.5rem)" }}
             >
                 DŹWIGI NA ŚLĄSKU <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-500 italic">DZIAŁAMY 24H</span>
+                DZIAŁAMY 24H
             </motion.h1>
         </div>
         

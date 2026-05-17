@@ -28,9 +28,7 @@ export function ForWhom() {
   ];
 
   return (
-    <section className="py-24 bg-zinc-900 text-white relative overflow-hidden" id="dla-kogo">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-20" />
+    <section className="py-24 relative overflow-hidden" style={{backgroundColor: '#1e2535'}} id="dla-kogo">
 
       <div className="container mx-auto px-6 relative z-10">
 
@@ -40,11 +38,11 @@ export function ForWhom() {
                 <span className="h-[1px] w-12 bg-amber-500" />
                 <span className="text-amber-500 font-bold tracking-[0.3em] uppercase text-xs">Obsługujemy każde zlecenie</span>
             </div>
-            <h2 className="font-heading font-black text-4xl md:text-5xl leading-tight mb-6">
+            <h2 className="font-heading font-black text-4xl md:text-5xl leading-tight mb-6 text-white">
                 DLA KOGO <br />
-                <span className="text-zinc-500">PRACUJEMY?</span>
+                <span className="text-amber-500">PRACUJEMY?</span>
             </h2>
-            <p className="text-zinc-400 text-lg leading-relaxed max-w-2xl">
+            <p className="text-gray-200 text-lg leading-relaxed max-w-2xl">
                 Nieważne czy to duża inwestycja przemysłowa czy budowa domu jednorodzinnego — przyjeżdżamy, wyceniamy i działamy tego samego dnia.
             </p>
         </div>
@@ -55,7 +53,8 @@ export function ForWhom() {
                 <Link
                     key={i}
                     href="/kontakt#formularz"
-                    className="group p-8 bg-zinc-800/50 border border-white/5 hover:border-amber-500/50 hover:bg-zinc-800 transition-all duration-300 rounded-2xl"
+                    className="group p-8 rounded-2xl border transition-all duration-300 hover:border-amber-500/50"
+                    style={{backgroundColor: '#2d3748', borderColor: '#4a5568'}}
                 >
                     <div className="mb-6 text-amber-500 group-hover:scale-110 transition-transform duration-300 bg-amber-500/10 w-16 h-16 rounded-xl flex items-center justify-center">
                         {item.icon}
@@ -63,10 +62,10 @@ export function ForWhom() {
                     <h3 className="font-heading font-bold text-xl text-white mb-3">
                         {item.title}
                     </h3>
-                    <p className="text-zinc-400 text-sm leading-relaxed mb-4">
+                    <p className="text-sm leading-relaxed mb-4" style={{color: '#cbd5e0'}}>
                         {item.desc}
                     </p>
-                    <span className="text-amber-400 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-amber-500 text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Zapytaj o wycenę →
                     </span>
                 </Link>

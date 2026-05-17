@@ -73,7 +73,7 @@ export default function ContactPage() {
             <h1 className="text-4xl md:text-5xl font-heading font-black text-zinc-900 leading-tight mb-6">
                 ZAMÓW DŹWIG LUB ZAPYTAJ <br /> O WYCENĘ
             </h1>
-            <p className="text-zinc-500 text-lg leading-relaxed max-w-lg">
+            <p className="text-zinc-900 text-lg leading-relaxed max-w-lg">
                 Zadzwoń, napisz lub wypełnij formularz – odpowiemy tego samego dnia.
                 Dyspozytor dostępny całą dobę.
             </p>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-bold text-zinc-900 text-lg mb-1">Wiadomość wysłana!</p>
-                  <p className="text-zinc-500">
+                  <p className="text-zinc-900">
                     Odpowiemy tego samego dnia. W pilnych sprawach:{" "}
                     <a href="tel:+48508313906" className="text-amber-500 font-bold hover:underline">508 313 906</a>
                   </p>

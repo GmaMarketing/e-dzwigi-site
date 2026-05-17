@@ -101,7 +101,7 @@ export default async function MachinePage({ params }: { params: Promise<{ slug: 
                         <span className="w-8 h-1 bg-amber-500 rounded-full" />
                         Opis Maszyny
                     </h2>
-                    <p className="text-lg text-zinc-600 leading-relaxed">
+                    <p className="text-lg text-zinc-900 leading-relaxed">
                         {machine.description}
                     </p>
                 </div>
@@ -170,7 +170,7 @@ export default async function MachinePage({ params }: { params: Promise<{ slug: 
                 {/* Contact Card */}
                 <div className="bg-zinc-900 text-white p-8 rounded-3xl shadow-xl sticky top-32 z-10">
                     <h3 className="text-xl font-bold mb-2">Zainteresowany?</h3>
-                    <p className="text-zinc-400 text-sm mb-8">Skontaktuj się z nami, aby sprawdzić dostępność i cenę wynajmu.</p>
+                    <p className="text-zinc-900 text-sm mb-8">Skontaktuj się z nami, aby sprawdzić dostępność i cenę wynajmu.</p>
                     
                     <a href="tel:+48508313906" className="block w-full py-4 bg-amber-500 hover:bg-white hover:text-amber-500 text-center rounded-xl font-bold uppercase tracking-widest transition-all mb-4">
                         Zadzwoń Teraz

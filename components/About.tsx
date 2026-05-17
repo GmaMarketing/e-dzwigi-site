@@ -2,8 +2,49 @@
 
 import Image from "next/image";
 import { ShieldCheck, Users, Clock } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+
+function useCountUp(from: number, target: number, duration: number) {
+  const [count, setCount] = useState(from);
+  const ref = useRef<HTMLDivElement>(null);
+  const fired = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !fired.current) {
+          fired.current = true;
+          observer.disconnect();
+
+          const start = performance.now();
+          const easeOut = (t: number) => 1 - Math.pow(1 - t, 3);
+
+          const tick = (now: number) => {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            setCount(Math.round(from + easeOut(progress) * (target - from)));
+            if (progress < 1) requestAnimationFrame(tick);
+          };
+
+          requestAnimationFrame(tick);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [from, target, duration]);
+
+  return { count, ref };
+}
 
 export function About() {
+  const { count, ref } = useCountUp(5, 20, 2000);
+
   const highlights = [
     { icon: <Users size={18} />, text: "Certyfikowani operatorzy dźwigów" },
     { icon: <ShieldCheck size={18} />, text: "Pełne ubezpieczenie OC" },
@@ -25,10 +66,10 @@ export function About() {
                 
                 <h2 className="font-heading font-black text-5xl md:text-7xl leading-[0.9] mb-12 tracking-tight">
                     DŹWIG NA MIEJSCU <br />
-                    <span className="text-zinc-300 italic">DZIAŁAMY</span>
+                    <span className="text-zinc-900 italic">DZIAŁAMY</span>
                 </h2>
                 
-                <div className="space-y-8 text-lg text-zinc-600 leading-relaxed max-w-xl">
+                <div className="space-y-8 text-lg text-zinc-900 leading-relaxed max-w-xl">
                     <p>
                         Wynajmujemy dźwigi samojezdne i podnośniki koszowe na terenie całego Śląska.
                         Zadzwoń – przyjeżdżamy, wyceniamy i działamy jeszcze tego samego dnia.
@@ -66,8 +107,10 @@ export function About() {
                 </div>
                 
                 {/* Floating Stats Card - Positioned better */}
-                <div className="absolute -bottom-8 -left-8 bg-amber-500 text-white p-10 shadow-2xl rounded-sm z-20">
-                    <div className="font-heading font-black text-6xl mb-2">30+</div>
+                <div ref={ref} className="absolute -bottom-8 -left-8 bg-amber-500 text-white p-10 shadow-2xl rounded-sm z-20">
+                    <div className="font-heading font-black text-6xl mb-2">
+                        {count}+
+                    </div>
                     <div className="text-xs font-bold uppercase tracking-[0.2em] opacity-80 leading-snug">
                         Lat w branży <br /> dźwigowej
                     </div>

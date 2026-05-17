@@ -26,10 +26,10 @@ const tychyCoordinates = createCoordinates(18.99, 50.12);
 
 export function ServiceMap() {
   return (
-    <section className="py-20 md:py-32 bg-zinc-50 relative overflow-hidden" id="zasieg">
+    <section className="py-20 md:py-32 relative overflow-hidden" style={{backgroundColor: '#1e2535'}} id="zasieg">
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-amber-100 rounded-full mb-8 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-8" style={{backgroundColor: '#2d3748', border: '1px solid #4a5568'}}>
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-300 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500" />
@@ -39,32 +39,32 @@ export function ServiceMap() {
             </span>
           </div>
 
-          <h2 className="font-heading font-black text-4xl md:text-5xl text-zinc-900 mb-8 leading-tight">
+          <h2 className="font-heading font-black text-4xl md:text-5xl text-white mb-8 leading-tight">
             DOCIERAMY TAM <br /> GDZIE INNI <br /> <span className="text-amber-500">NIE MOGĄ</span>
           </h2>
 
-          <p className="text-zinc-500 text-lg leading-relaxed mb-10 max-w-md">
+          <p className="text-lg leading-relaxed mb-10 max-w-md" style={{color: '#e5e7eb'}}>
             Baza w Tychach, zasięg na cały Śląsk. Dojazd do Katowic, Gliwic, Sosnowca,
             Rybnika i okolic - zazwyczaj poniżej 60 minut.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-            <div className="flex items-start gap-4 p-4 bg-white rounded-xl border border-zinc-100 shadow-sm">
+            <div className="flex items-start gap-4 p-4 rounded-xl" style={{backgroundColor: '#2d3748', border: '1px solid #4a5568'}}>
               <Clock className="text-amber-500 shrink-0 mt-1" />
               <div>
-                <span className="block font-bold text-zinc-900 text-sm uppercase">
+                <span className="block font-bold text-white text-sm uppercase">
                   Szybka Reakcja
                 </span>
-                <span className="text-xs text-zinc-500">Dojazd 24/7 na wezwanie</span>
+                <span className="text-xs" style={{color: '#cbd5e0'}}>Dojazd 24/7 na wezwanie</span>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-4 bg-white rounded-xl border border-zinc-100 shadow-sm">
+            <div className="flex items-start gap-4 p-4 rounded-xl" style={{backgroundColor: '#2d3748', border: '1px solid #4a5568'}}>
               <ShieldCheck className="text-amber-500 shrink-0 mt-1" />
               <div>
-                <span className="block font-bold text-zinc-900 text-sm uppercase">
+                <span className="block font-bold text-white text-sm uppercase">
                   Bezpieczeństwo
                 </span>
-                <span className="text-xs text-zinc-500">Pełne ubezpieczenie usług</span>
+                <span className="text-xs" style={{color: '#cbd5e0'}}>Pełne ubezpieczenie usług</span>
               </div>
             </div>
           </div>
@@ -73,7 +73,8 @@ export function ServiceMap() {
             {cities.map((city) => (
               <span
                 key={city}
-                className="px-3 py-1 bg-zinc-100 text-zinc-600 text-xs font-bold uppercase tracking-wide rounded-md"
+                className="px-3 py-1 text-white text-xs font-bold uppercase tracking-wide rounded-md"
+                style={{backgroundColor: '#2d3748', border: '1px solid #4a5568'}}
               >
                 {city}
               </span>
@@ -81,8 +82,7 @@ export function ServiceMap() {
           </div>
         </div>
 
-        <div className="relative h-[400px] md:h-[600px] w-full bg-white rounded-3xl border border-zinc-200 shadow-2xl p-4 md:p-8 flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] opacity-30" />
+        <div className="relative h-[400px] md:h-[600px] w-full rounded-3xl p-4 md:p-8 flex items-center justify-center overflow-hidden" style={{backgroundColor: '#2d3748', border: '1px solid #4a5568'}}>
 
           <div className="w-full h-full">
             <ComposableMap
@@ -107,19 +107,19 @@ export function ServiceMap() {
                         geography={geo}
                         style={{
                           default: {
-                            fill: isSilesia ? "#fee2e2" : "#f4f4f5",
-                            stroke: isSilesia ? "#F59E0B" : "#e4e4e7",
-                            strokeWidth: isSilesia ? 2 : 1,
+                            fill: isSilesia ? "#F59E0B" : "#4a5568",
+                            stroke: "#1e2535",
+                            strokeWidth: 1,
                             outline: "none",
                           },
                           hover: {
-                            fill: isSilesia ? "#fecaca" : "#e4e4e7",
-                            stroke: isSilesia ? "#F59E0B" : "#a1a1aa",
-                            strokeWidth: 2,
+                            fill: isSilesia ? "#FBBF24" : "#6b7280",
+                            stroke: "#1e2535",
+                            strokeWidth: 1,
                             outline: "none",
                           },
                           pressed: {
-                            fill: "#e4e4e7",
+                            fill: isSilesia ? "#F59E0B" : "#4a5568",
                             outline: "none",
                           },
                         }}
@@ -131,13 +131,13 @@ export function ServiceMap() {
 
               <Marker coordinates={tychyCoordinates}>
                 <g className="group cursor-pointer">
-                  <circle r={8} fill="#F59E0B" stroke="#fff" strokeWidth={2} className="animate-pulse opacity-50" />
-                  <circle r={4} fill="#F59E0B" stroke="#fff" strokeWidth={2} />
+                  <circle r={8} fill="#F59E0B" stroke="#1e2535" strokeWidth={2} className="animate-pulse opacity-50" />
+                  <circle r={4} fill="#F59E0B" stroke="#1e2535" strokeWidth={2} />
                   <text
                     textAnchor="middle"
                     y={-15}
-                    className="font-sans font-bold text-[10px] fill-zinc-900 uppercase tracking-wider bg-white"
-                    style={{ textShadow: "0px 2px 4px rgba(255,255,255,1)" }}
+                    className="font-sans font-bold text-[10px] uppercase tracking-wider"
+                    style={{ fill: '#ffffff', textShadow: "0px 2px 4px rgba(0,0,0,0.8)" }}
                   >
                     Tychy
                   </text>
@@ -147,11 +147,11 @@ export function ServiceMap() {
           </div>
 
           <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end pointer-events-none">
-            <div className="bg-white/90 backdrop-blur px-4 py-3 rounded-xl border border-zinc-200 shadow-lg">
-              <span className="block text-[10px] font-bold text-zinc-400 uppercase tracking-widest mb-1">
+            <div className="px-4 py-3 rounded-xl shadow-lg" style={{backgroundColor: '#1e2535', border: '1px solid #4a5568'}}>
+              <span className="block text-[10px] font-bold uppercase tracking-widest mb-1" style={{color: '#cbd5e0'}}>
                 Baza Główna
               </span>
-              <div className="flex items-center gap-2 text-zinc-900 font-mono font-bold text-sm">
+              <div className="flex items-center gap-2 font-mono font-bold text-sm text-white">
                 <MapPin size={14} className="text-amber-500" />
                 Tychy, ul. Dojazdowa 7
               </div>

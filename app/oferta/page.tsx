@@ -7,16 +7,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-    { label: "Wiadukty, mosty i kładki", icon: <HardHat size={24} />, image: "/services/prace-budowlano-drogowe.png" },
-    { label: "Hale i konstrukcje stalowe", icon: <Factory size={24} />, image: "/services/prace-montazowe.png" },
-    { label: "Montaż konstrukcji", icon: <Hammer size={24} />, image: "/services/montaz-konstrukcji.png" },
-    { label: "Ciepłownictwo i kanalizacja", icon: <Wrench size={24} />, image: "/services/prace-cieplownicze.png" },
-    { label: "Zaplecza budowy", icon: <Box size={24} />, image: "/services/montaz-zapleczy.png" },
-    { label: "Załadunek i rozładunek", icon: <Package size={24} />, image: "/services/zaladunek-rozladunek.png" },
+    { label: "Wiadukty, mosty i kładki", icon: <HardHat size={24} />, image: "/services/prace-budowlano-drogowe.webp" },
+    { label: "Hale i konstrukcje stalowe", icon: <Factory size={24} />, image: "/services/prace-montazowe.webp" },
+    { label: "Montaż konstrukcji", icon: <Hammer size={24} />, image: "/services/montaz-konstrukcji.webp" },
+    { label: "Ciepłownictwo i kanalizacja", icon: <Wrench size={24} />, image: "/services/prace-cieplownicze.webp" },
+    { label: "Zaplecza budowy", icon: <Box size={24} />, image: "/services/montaz-zapleczy.webp" },
+    { label: "Załadunek i rozładunek", icon: <Package size={24} />, image: "/services/zaladunek-rozladunek.webp" },
     { label: "Reklamy zewnętrzne", icon: <Megaphone size={24} />, image: "/services/montaz-reklam.png" },
-    { label: "Klimatyzacja i HVAC", icon: <Fan size={24} />, image: "/services/montaz-klimatyzacji.png" },
-    { label: "Domy i osiedla", icon: <Home size={24} />, image: "/services/obsluga-budow.png" },
-    { label: "Zlecenia specjalne", icon: <Star size={24} />, image: "/services/zlecenia-specjalne.png" },
+    { label: "Klimatyzacja i HVAC", icon: <Fan size={24} />, image: "/services/montaz-klimatyzacji.webp" },
+    { label: "Domy i osiedla", icon: <Home size={24} />, image: "/services/obsluga-budow.webp" },
+    { label: "Zlecenia specjalne", icon: <Star size={24} />, image: "/services/zlecenia-specjalne.webp" },
 ];
 
 export default function OfferPage() {
@@ -91,7 +91,7 @@ export default function OfferPage() {
             <h2 className="text-4xl md:text-6xl font-heading font-black text-zinc-900 leading-tight mb-8">
                 USŁUGI DŹWIGOWE <br /> I PODNOŚNIKOWE
             </h2>
-            <p className="text-zinc-500 text-lg leading-relaxed">
+            <p className="text-zinc-900 text-lg leading-relaxed">
                 Powiedz nam co chcesz zrobić – dobierzemy dźwig, przyjedziemy i wykonamy robotę. Obsługujemy budowy, montaże, prace specjalne i zlecenia których inni nie chcą się podjąć.
             </p>
         </div>
@@ -130,7 +130,7 @@ export default function OfferPage() {
                 <h3 className="font-heading font-black text-3xl md:text-4xl mb-6">
                     MASZ ZLECENIE? ZADZWOŃ – WYCENIAMY TEGO SAMEGO DNIA.
                 </h3>
-                <p className="text-zinc-400 text-lg leading-relaxed mb-8">
+                <p className="text-zinc-900 text-lg leading-relaxed mb-8">
                     Każde zlecenie wyceniamy bezpłatnie. Dyspozytor dostępny 24h – zadzwoń: 508 313 906
                 </p>
                 <Link href="/kontakt" className="inline-block bg-amber-500 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-white hover:text-amber-500 transition-all">

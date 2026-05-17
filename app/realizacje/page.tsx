@@ -227,13 +227,22 @@ export default function RealizacjePage() {
               </span>
               <ChevronDown
                 size={22}
-                className={`transition-transform duration-300 ${panelOpen ? "rotate-180" : ""}`}
+                className={`transition-transform duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] ${panelOpen ? "rotate-180" : ""}`}
               />
             </div>
           </button>
 
           {/* Panel rozwijany */}
+          <AnimatePresence initial={false}>
           {panelOpen && (
+            <motion.div
+              key="filter-panel"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="overflow-hidden"
+            >
             <div className="mt-1 bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
 
               {/* Nagłówek panelu */}
@@ -333,44 +342,44 @@ export default function RealizacjePage() {
 
               </div>
             </div>
+            </motion.div>
           )}
+          </AnimatePresence>
         </div>
 
         {/* Grid */}
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="popLayout">
           <motion.div
             key={activeFilter}
-            className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
             initial="hidden"
             animate="visible"
-            exit="hidden"
+            exit={{ opacity: 0, transition: { duration: 0.15 } }}
             variants={{
               hidden:  {},
-              visible: { transition: { staggerChildren: 0.06 } },
+              visible: { transition: { staggerChildren: 0.03, delayChildren: 0 } },
             }}
           >
             {filteredImages.map((img, i) => (
               <motion.div
                 key={img.file}
                 onClick={() => openLightbox(i)}
-                className="break-inside-avoid relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl bg-zinc-200 cursor-pointer"
+                className="relative group rounded-2xl overflow-hidden shadow-sm hover:shadow-xl bg-zinc-300 cursor-pointer aspect-[4/3]"
                 variants={{
-                  hidden:  { opacity: 0, y: 24, scale: 0.97 },
+                  hidden:  { opacity: 0, y: 12 },
                   visible: {
-                    opacity: 1, y: 0, scale: 1,
-                    transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] },
+                    opacity: 1, y: 0,
+                    transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] },
                   },
                 }}
               >
                 <Image
                   src={`/${img.folder ?? "gallery"}/${img.file}`}
                   alt={img.alt}
-                  width={800}
-                  height={600}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  loading={i < 9 ? "eager" : "lazy"}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-colors duration-500 flex items-end p-5 opacity-0 group-hover:opacity-100">
                   <span className="text-white font-bold uppercase tracking-widest text-xs border border-white/60 px-4 py-2 rounded-full bg-black/30">

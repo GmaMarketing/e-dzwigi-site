@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
     ];
   },
   images: {
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 31536000,
+    deviceSizes: [640, 828, 1080, 1280, 1920],
+    imageSizes: [64, 128, 256, 384, 512],
     remotePatterns: [
       {
         protocol: 'https',

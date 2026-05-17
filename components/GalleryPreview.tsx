@@ -94,7 +94,7 @@ export function GalleryPreview() {
             <h2 className="font-heading font-black text-4xl md:text-5xl text-zinc-900 leading-tight mb-4">
               CO ROBIMY<br />NA CO DZIEŃ
             </h2>
-            <p className="text-zinc-500 text-lg leading-relaxed">
+            <p className="text-zinc-900 text-lg leading-relaxed">
               Kilkaset zleceń rocznie w każdych warunkach –
               od bloków mieszkalnych po nocne montaże w halach przemysłowych.
             </p>

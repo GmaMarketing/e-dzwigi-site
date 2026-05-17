@@ -116,10 +116,10 @@ export function FleetHorizontal() {
                   </span>
                 )}
                 <h3 className="text-3xl font-heading font-black text-zinc-900 mb-2">{m.displayName}</h3>
-                <p className="text-lg text-zinc-500 font-medium mb-2">{m.displayType}</p>
+                <p className="text-lg text-zinc-900 font-medium mb-2">{m.displayType}</p>
                 <p className="text-4xl font-heading font-black text-amber-500/80 mb-4 leading-none">{m.meter}</p>
                 <div className="flex flex-wrap gap-4 mb-6">
-                  <div className="px-3 py-1 border border-zinc-300 rounded-full text-zinc-700 font-mono text-xs">{m.shortSpecs}</div>
+                  <div className="px-3 py-1 border border-zinc-300 rounded-full text-zinc-900 font-mono text-xs">{m.shortSpecs}</div>
                   <div className="px-3 py-1 border border-amber-500 bg-amber-500/10 text-amber-500 rounded-full font-mono text-xs uppercase tracking-wider">Dostępny</div>
                 </div>
                 <Link href={`/flota/${m.slug}`} title={`Szczegóły: ${m.model}`} className="block w-full py-4 bg-amber-500 text-white rounded-xl font-bold uppercase tracking-widest hover:bg-amber-600 transition-colors text-center">
@@ -150,9 +150,9 @@ export function FleetHorizontal() {
                 FLOTA
               </h2>
             </div>
-            <p className="text-zinc-400 text-xs uppercase tracking-widest font-mono shrink-0 hidden lg:block">
+            <p className="text-zinc-700 text-xs uppercase tracking-widest font-mono shrink-0 hidden lg:block">
               <span className="text-zinc-900">{String(current + 1).padStart(2, "0")}</span>
-              <span className="mx-2 text-zinc-300">/</span>
+              <span className="mx-2 text-zinc-500">/</span>
               {String(fleet.length).padStart(2, "0")}
             </p>
           </div>
@@ -173,12 +173,12 @@ export function FleetHorizontal() {
               <p className="text-sm lg:text-base text-amber-500 font-bold uppercase tracking-wider mb-5">
                 {machine.displayType}
               </p>
-              <p className="text-sm lg:text-[15px] text-zinc-600 leading-relaxed border-l-2 border-amber-500 pl-5 mb-6 line-clamp-3">
+              <p className="text-sm lg:text-[15px] text-zinc-900 leading-relaxed border-l-2 border-amber-500 pl-5 mb-6 line-clamp-3">
                 {machine.description}
               </p>
 
               <div className="flex items-center gap-3 mb-7">
-                <span className="px-3 py-1.5 border border-zinc-300 bg-white text-zinc-700 font-mono text-[11px] uppercase tracking-wider shadow-sm">
+                <span className="px-3 py-1.5 border border-zinc-300 bg-white text-zinc-900 font-mono text-[11px] uppercase tracking-wider shadow-sm">
                   {machine.shortSpecs}
                 </span>
                 <span className="px-3 py-1.5 border border-amber-500 bg-amber-500/10 text-amber-500 font-mono text-[11px] uppercase tracking-wider">
@@ -195,7 +195,7 @@ export function FleetHorizontal() {
                   ZOBACZ SZCZEGÓŁY
                   <ArrowRight size={14} />
                 </Link>
-                <span className="text-zinc-500 font-mono text-[10px] uppercase tracking-widest">{machine.model}</span>
+                <span className="text-zinc-900 font-mono text-[10px] uppercase tracking-widest">{machine.model}</span>
               </div>
             </div>
 

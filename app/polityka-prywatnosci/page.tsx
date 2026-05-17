@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
           </h1>
         </div>
 
-        <div className="prose prose-zinc max-w-4xl text-zinc-600">
+        <div className="prose prose-zinc max-w-4xl text-zinc-900">
           <p>
             Niniejsza Polityka Prywatnosci okresla zasady przetwarzania i ochrony danych
             osobowych przekazanych przez uzytkownikow w zwiazku z korzystaniem przez nich

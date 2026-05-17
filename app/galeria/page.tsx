@@ -63,7 +63,7 @@ export default function GalleryPage() {
             <h1 className="text-4xl md:text-5xl font-heading font-black text-zinc-900 leading-tight mb-6">
                 NASZA GALERIA
             </h1>
-            <p className="text-zinc-500 max-w-2xl text-lg">
+            <p className="text-zinc-900 max-w-2xl text-lg">
                 Zobacz nasze maszyny w akcji. Realizujemy zlecenia w trudnych warunkach i na wysokościach.
             </p>
         </div>

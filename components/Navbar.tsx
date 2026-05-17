@@ -109,7 +109,7 @@ export function Navbar() {
 
             {/* Desktop Navigation */}
             <nav className={`hidden lg:flex items-center gap-0.5 transition-all duration-300 whitespace-nowrap ${
-                isSolid ? "bg-zinc-100/50 p-0.5 rounded-full" : ""
+                isSolid ? "bg-zinc-900 p-0.5 rounded-full" : ""
             }`}>
                 {navLinks.map((item) => (
                     <Link
@@ -117,7 +117,7 @@ export function Navbar() {
                         href={item.href}
                         className={`inline-flex items-center gap-1 px-2.5 xl:px-4 py-1.5 text-[9px] xl:text-[10px] font-bold uppercase tracking-wider rounded-full transition-all duration-300 ${
                             isSolid
-                                ? "text-zinc-600 hover:bg-white hover:text-amber-500 hover:shadow-sm"
+                                ? "text-white hover:bg-white/10 hover:text-amber-400"
                                 : "text-white/80 hover:bg-white/10 hover:text-white"
                         }`}
                     >
