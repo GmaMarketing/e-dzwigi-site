@@ -3,6 +3,8 @@ import Script from "next/script";
 import { Barlow_Condensed, Manrope } from "next/font/google";
 import "./globals.css";
 import { CookieConsent } from "@/components/CookieConsent";
+import { PageLoader } from "@/components/PageLoader";
+import { LoaderProvider } from "@/contexts/LoaderContext";
 
 const siteUrl = "https://e-dzwigi.pl";
 const ogImageUrl = `${siteUrl}/Hydromont_red.png`;
@@ -141,7 +143,10 @@ gtag('js', new Date());
 gtag('config', '${googleAnalyticsId}');`}</Script>
           </>
         ) : null}
-        {children}
+        <LoaderProvider>
+          <PageLoader />
+          {children}
+        </LoaderProvider>
         <CookieConsent />
       </body>
     </html>

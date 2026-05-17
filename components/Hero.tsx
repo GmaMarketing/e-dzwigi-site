@@ -4,8 +4,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import { useLoader } from "@/contexts/LoaderContext";
 
 export function Hero() {
+  const { done } = useLoader();
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -34,9 +36,9 @@ export function Hero() {
       <div className="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center pt-20">
         
         <div className="overflow-hidden mb-4">
-            <motion.p 
+            <motion.p
                 initial={{ y: "100%" }}
-                animate={{ y: 0 }}
+                animate={done ? { y: 0 } : { y: "100%" }}
                 transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 className="text-amber-400 font-bold tracking-[0.3em] uppercase text-sm"
             >
@@ -47,7 +49,7 @@ export function Hero() {
         <div className="overflow-visible pr-6">
             <motion.h1
                 initial={{ y: "100%" }}
-                animate={{ y: 0 }}
+                animate={done ? { y: 0 } : { y: "100%" }}
                 transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                 className="font-heading font-black leading-[0.95] tracking-tighter mb-8 pb-3 italic text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-500"
                 style={{ fontSize: "clamp(3rem, 10vw, 7.5rem)" }}
@@ -60,7 +62,7 @@ export function Hero() {
         <div className="overflow-hidden max-w-2xl border-l-2 border-amber-500 pl-4 md:pl-8">
              <motion.p
                 initial={{ y: "100%" }}
-                animate={{ y: 0 }}
+                animate={done ? { y: 0 } : { y: "100%" }}
                 transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                 className="text-lg md:text-xl text-zinc-300 leading-relaxed font-light"
             >
@@ -71,7 +73,7 @@ export function Hero() {
         <div className="overflow-hidden mt-8">
           <motion.div
             initial={{ y: "100%" }}
-            animate={{ y: 0 }}
+            animate={done ? { y: 0 } : { y: "100%" }}
             transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
             <Link
