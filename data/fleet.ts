@@ -115,7 +115,7 @@ export const fleet: FleetMachine[] = [
   },
   {
     slug: "podnosnik-koszowy-21m",
-    model: "GSR PX 209",
+    model: "GSR E 209 PX",
     displayName: "ELEWACJE I WYCINKA",
     type: "Podnośnik Koszowy",
     displayType: "Podnośnik koszowy – Śląsk",

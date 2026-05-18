@@ -59,7 +59,7 @@ export function Navbar() {
         <div
           className={`relative flex items-center justify-between px-8 md:px-10 py-5 border transition-all duration-500 ${
             isSolid
-              ? "bg-white/60 shadow-lg rounded-2xl border-white/30"
+              ? "bg-white/35 shadow-lg rounded-2xl border-white/25"
               : "bg-transparent border-transparent"
           }`}
           style={{
@@ -109,8 +109,8 @@ export function Navbar() {
 
             {/* Desktop Navigation */}
             <nav className={`hidden lg:flex items-center gap-0.5 transition-all duration-300 whitespace-nowrap ${
-                isSolid ? "bg-zinc-900 p-0.5 rounded-full" : ""
-            }`}>
+                isSolid ? "p-0.5 rounded-full" : ""
+            }`} style={isSolid ? {backgroundColor: '#1e2535'} : {}}>
                 {navLinks.map((item) => (
                     <Link
                         key={item.name}
@@ -136,8 +136,9 @@ export function Navbar() {
                 <a
                     href="tel:+48508313906"
                     className={`hidden xl:flex flex-col items-end shrink-0 group transition-colors duration-300 ${
-                        isSolid ? "text-zinc-900" : "text-white"
+                        isSolid ? "" : "text-white"
                     }`}
+                    style={isSolid ? {color: '#1e2535'} : {}}
                 >
                     <span className="text-[8px] uppercase font-bold tracking-widest opacity-60 whitespace-nowrap">Dyspozytor 24h</span>
                     <span className="font-heading font-black text-sm group-hover:text-amber-500 transition-colors tracking-tight whitespace-nowrap">
@@ -150,10 +151,10 @@ export function Navbar() {
                     font-bold text-[10px] uppercase tracking-widest
                     transition-all duration-300 rounded-lg
                     ${isSolid
-                        ? "bg-zinc-900 text-white hover:bg-amber-500"
+                        ? "text-white hover:bg-amber-500"
                         : "bg-white text-zinc-900 hover:bg-amber-500 hover:text-white"
                     }
-                `}>
+                `} style={isSolid ? {backgroundColor: '#1e2535'} : {}}>
                     <span>Kontakt</span>
                     <ArrowRight size={11} className="transition-transform group-hover:translate-x-1" />
                 </Link>

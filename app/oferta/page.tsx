@@ -42,7 +42,7 @@ export default function OfferPage() {
               { meter: "30m", capacity: "do 35T",  name: "HALE I PRZEMYSŁ",        specs: "Żuraw samojezdny · zasięg 30m",        image: "/sprzet/dzwig-30m.webp",          href: "/flota/zuraw-samojezdny-35t"          },
               { meter: "26m", capacity: "do 25T",  name: "DOMY I OSIEDLA",         specs: "Żuraw samojezdny · zasięg 26m",        image: "/sprzet/dzwig-zdjecie2-26m.webp", href: "/flota/zuraw-samojezdny-25t"          },
               { meter: "27m", capacity: "230 kg",  name: "FASADY I WYCINKA",       specs: "Podnośnik koszowy · Ruthmann TB 270.2", image: "/sprzet/podnosnik-25m.webp",     href: "/flota/podnosnik-koszowy-ruthmann-27m", isNew: true },
-              { meter: "21m", capacity: "220 kg",  name: "ELEWACJE I WYCINKA",     specs: "Podnośnik koszowy · GSR PX 209",       image: "/sprzet/podnosniki-21m.webp",     href: "/flota/podnosnik-koszowy-21m"         },
+              { meter: "21m", capacity: "220 kg",  name: "ELEWACJE I WYCINKA",     specs: "Podnośnik koszowy · GSR E 209 PX",       image: "/sprzet/podnosniki-21m.webp",     href: "/flota/podnosnik-koszowy-21m"         },
             ].map((card) => (
               <Link
                 key={card.href}
@@ -125,12 +125,12 @@ export default function OfferPage() {
             ))}
         </div>
 
-        <div className="mt-16 bg-zinc-900 rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden">
+        <div className="mt-16 rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden" style={{backgroundColor: '#1e2535'}}>
             <div className="relative z-10 max-w-2xl mx-auto">
                 <h3 className="font-heading font-black text-3xl md:text-4xl mb-6">
                     MASZ ZLECENIE? ZADZWOŃ – WYCENIAMY TEGO SAMEGO DNIA.
                 </h3>
-                <p className="text-zinc-900 text-lg leading-relaxed mb-8">
+                <p className="text-white text-lg leading-relaxed mb-8">
                     Każde zlecenie wyceniamy bezpłatnie. Dyspozytor dostępny 24h – zadzwoń: 508 313 906
                 </p>
                 <Link href="/kontakt" className="inline-block bg-amber-500 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-white hover:text-amber-500 transition-all">

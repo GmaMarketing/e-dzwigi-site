@@ -200,7 +200,8 @@ export default function RealizacjePage() {
                 return opening;
               });
             }}
-            className="w-full flex items-center justify-between bg-zinc-900 text-white px-8 py-6 rounded-2xl hover:bg-zinc-800 transition-colors group"
+            className="w-full flex items-center justify-between text-white px-8 py-6 rounded-2xl transition-colors group"
+            style={{backgroundColor: '#1e2535'}}
           >
             <div className="flex items-center gap-5">
               <SlidersHorizontal size={24} className="text-amber-400 shrink-0" />
@@ -243,26 +244,26 @@ export default function RealizacjePage() {
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               className="overflow-hidden"
             >
-            <div className="mt-1 bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+            <div className="mt-1 rounded-2xl overflow-hidden border border-white/10" style={{backgroundColor: '#1e2535'}}>
 
               {/* Nagłówek panelu */}
-              <div className="flex items-center gap-3 px-6 py-4 border-b border-zinc-800">
+              <div className="flex items-center gap-3 px-6 py-4 border-b border-white/10">
                 <button
                   onClick={() => { setActiveFilter("all"); setSelectedImage(null); setPanelOpen(false); }}
                   className={`px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all ${
                     activeFilter === "all"
                       ? "bg-white text-zinc-900"
-                      : "bg-zinc-800 text-zinc-400 hover:bg-zinc-700 hover:text-white"
+                      : "bg-white/10 text-zinc-300 hover:bg-white/20 hover:text-white"
                   }`}
                 >
                   Wszystkie
                 </button>
-                <span className="text-zinc-700 text-xs">
+                <span className="text-white text-xs">
                   — lub wybierz filtr poniżej
                 </span>
               </div>
 
-              <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
+              <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-white/10">
 
                 {/* RODZAJ SPRZĘTU */}
                 <div className="p-6">
@@ -283,10 +284,10 @@ export default function RealizacjePage() {
                           className={`group relative flex flex-col items-start p-4 rounded-xl border text-left transition-all duration-200 ${
                             active
                               ? "bg-amber-500 border-amber-500 shadow-lg shadow-amber-500/20"
-                              : "bg-zinc-800 border-zinc-700 hover:border-amber-500/50 hover:bg-zinc-750"
+                              : "bg-white/10 border-white/10 hover:border-amber-500/50 hover:bg-white/20"
                           }`}
                         >
-                          <span className={`text-2xl font-black leading-none mb-2 ${active ? "text-white" : "text-zinc-600 group-hover:text-amber-500 transition-colors"}`}>
+                          <span className={`text-2xl font-black leading-none mb-2 ${active ? "text-white" : "text-white group-hover:text-amber-500 transition-colors"}`}>
                             {f.id === "m21" && "21m"}
                             {f.id === "m26" && "26m"}
                             {f.id === "m27" && "27m"}
@@ -297,7 +298,7 @@ export default function RealizacjePage() {
                           <span className={`text-xs font-bold leading-tight ${active ? "text-white" : "text-zinc-300"}`}>
                             {f.label}
                           </span>
-                          <span className={`mt-2 text-[10px] font-black uppercase tracking-widest ${active ? "text-amber-200" : "text-zinc-600"}`}>
+                          <span className={`mt-2 text-[10px] font-black uppercase tracking-widest ${active ? "text-amber-200" : "text-white"}`}>
                             {count} zdjęć
                           </span>
                         </button>
@@ -325,13 +326,13 @@ export default function RealizacjePage() {
                           className={`flex items-center justify-between px-4 py-3 rounded-xl border text-left transition-all duration-200 ${
                             active
                               ? "bg-white border-white"
-                              : "bg-zinc-800 border-zinc-700 hover:border-zinc-500 hover:bg-zinc-750"
+                              : "bg-white/10 border-white/10 hover:border-white/30 hover:bg-white/20"
                           }`}
                         >
                           <span className={`text-sm font-bold ${active ? "text-zinc-900" : "text-zinc-300"}`}>
                             {f.label}
                           </span>
-                          <span className={`text-xs font-black tabular-nums ${active ? "text-zinc-500" : "text-zinc-600"}`}>
+                          <span className={`text-xs font-black tabular-nums ${active ? "text-zinc-500" : "text-white"}`}>
                             {count}
                           </span>
                         </button>

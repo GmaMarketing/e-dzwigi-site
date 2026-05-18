@@ -24,7 +24,7 @@ export function Footer() {
              </div>
              
             <p className="text-slate-400 leading-relaxed max-w-sm">
-                Lider usług dźwigowych na Śląsku od 1993 roku. 
+                Lider usług dźwigowych na Śląsku od 2003 roku. 
                 Specjalizujemy się w trudnych zleceniach inżynieryjnych, 
                 oferując nowoczesną flotę i doświadczonych operatorów.
             </p>
