@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     images: [
       {
-        url: "https://e-dzwigi.pl/Hydromont_red.png",
+        url: "https://e-dzwigi.pl/Hydromont_logo.png",
         width: 512,
         height: 512,
         alt: "HYDROMONT - usługi dźwigowe i podnośniki koszowe na Śląsku",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Wynajem Dźwigów Śląsk | e-dzwigi.pl",
     description:
       "Dźwigi samojezdne i podnośniki koszowe - Śląsk. Wycena tego samego dnia. Tel: 508 313 906",
-    images: ["https://e-dzwigi.pl/Hydromont_red.png"],
+    images: ["https://e-dzwigi.pl/Hydromont_logo.png"],
   },
 };
 

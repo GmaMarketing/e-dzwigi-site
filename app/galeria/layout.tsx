@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     images: [
       {
-        url: "https://e-dzwigi.pl/Hydromont_red.png",
+        url: "https://e-dzwigi.pl/Hydromont_logo.png",
         width: 512,
         height: 512,
         alt: "Galeria realizacji HYDROMONT",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Galeria Realizacji - e-dzwigi.pl",
     description:
       "Zdjęcia z realizacji usług dźwigowych na Śląsku. Żurawie Liebherr i podnośniki koszowe w akcji.",
-    images: ["https://e-dzwigi.pl/Hydromont_red.png"],
+    images: ["https://e-dzwigi.pl/Hydromont_logo.png"],
   },
 };
 

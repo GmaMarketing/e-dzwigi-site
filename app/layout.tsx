@@ -7,7 +7,7 @@ import { PageLoader } from "@/components/PageLoader";
 import { LoaderProvider } from "@/contexts/LoaderContext";
 
 const siteUrl = "https://e-dzwigi.pl";
-const ogImageUrl = `${siteUrl}/Hydromont_red.png`;
+const ogImageUrl = `${siteUrl}/Hydromont_logo.png`;
 const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID;
 const googleTagManagerId = process.env.NEXT_PUBLIC_GTM_ID;
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
