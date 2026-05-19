@@ -78,7 +78,7 @@ export function buildEmail(opts: {
       <!-- FOOTER -->
       <tr>
         <td style="padding:24px 0;text-align:center;">
-          <p style="margin:0;font-size:11px;color:#a1a1aa;">HYDROMONT S.C. &bull; ul. Dojazdowa 7, 43-100 Tychy &bull; NIP: 646-278-06-04</p>
+          <p style="margin:0;font-size:11px;color:#a1a1aa;">HYDROMONT S.C. &bull; ul. Dojazdowa 7, 43-100 Tychy &bull; NIP: 6462780604</p>
           <p style="margin:6px 0 0;font-size:11px;color:#a1a1aa;">e-dzwigi.pl</p>
         </td>
       </tr>

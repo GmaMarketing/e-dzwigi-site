@@ -296,14 +296,14 @@ export default function ContactPage() {
                          <p>ul. Dojazdowa 7</p>
                          <p>43-100 Tychy</p>
                     </div>
-                    <div className="mt-4 pt-4 border-t border-zinc-100 grid grid-cols-2 gap-4 text-sm font-mono text-zinc-500">
+                    <div className="mt-4 pt-4 border-t border-zinc-100 grid grid-cols-2 gap-4 text-sm font-mono">
                         <div>
-                            <span className="block text-[10px] uppercase font-bold tracking-wider text-zinc-400">NIP</span>
-                            646-278-06-04
+                            <span className="block text-[10px] uppercase font-bold tracking-wider text-zinc-400 mb-0.5">NIP</span>
+                            <span className="font-semibold text-zinc-700">6462780604</span>
                         </div>
                         <div>
-                            <span className="block text-[10px] uppercase font-bold tracking-wider text-zinc-400">REGON</span>
-                            240669349
+                            <span className="block text-[10px] uppercase font-bold tracking-wider text-zinc-400 mb-0.5">REGON</span>
+                            <span className="font-semibold text-zinc-700">240669349</span>
                         </div>
                     </div>
                 </address>

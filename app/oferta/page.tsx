@@ -131,7 +131,7 @@ export default function OfferPage() {
                     MASZ ZLECENIE? ZADZWOŃ – WYCENIAMY TEGO SAMEGO DNIA.
                 </h3>
                 <p className="text-white text-lg leading-relaxed mb-8">
-                    Każde zlecenie wyceniamy bezpłatnie. Dyspozytor dostępny 24h – zadzwoń: 508 313 906
+                    Każde zlecenie wyceniamy bezpłatnie. Dyspozytor dostępny 24h – zadzwoń: <span className="whitespace-nowrap">508 313 906</span>
                 </p>
                 <Link href="/kontakt" className="inline-block bg-amber-500 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-white hover:text-amber-500 transition-all">
                     Zamów wycenę

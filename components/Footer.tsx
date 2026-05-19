@@ -108,14 +108,14 @@ export function Footer() {
                     <a href="mailto:biuro@e-dzwigi.pl" className="hover:text-white transition-colors">biuro@e-dzwigi.pl</a>
                 </div>
 
-                <div className="flex gap-6 text-xs text-slate-600 font-mono pt-2">
+                <div className="flex gap-6 text-xs font-mono pt-2">
                     <div>
-                        <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-700 mb-0.5">NIP</span>
-                        646-278-06-04
+                        <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-500 mb-0.5">NIP</span>
+                        <span className="font-semibold text-slate-300">6462780604</span>
                     </div>
                     <div>
-                        <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-700 mb-0.5">REGON</span>
-                        240669349
+                        <span className="block text-[10px] uppercase font-bold tracking-wider text-slate-500 mb-0.5">REGON</span>
+                        <span className="font-semibold text-slate-300">240669349</span>
                     </div>
                 </div>
             </div>
