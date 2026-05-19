@@ -36,6 +36,26 @@ export function buildEmail(opts: {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<style>
+  .logo-dark { display: none !important; mso-hide: all !important; }
+  
+  /* Standard Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    .logo-light { display: none !important; mso-hide: all !important; }
+    .logo-dark { display: block !important; margin: 0 auto !important; }
+    .text-dark { color: #ffffff !important; }
+  }
+
+  /* Gmail Dark Mode */
+  [data-ogsc] .logo-light,
+  [data-ogsb] .logo-light { display: none !important; }
+  [data-ogsc] .logo-dark,
+  [data-ogsb] .logo-dark { display: block !important; margin: 0 auto !important; }
+  [data-ogsc] .text-dark,
+  [data-ogsb] .text-dark { color: #ffffff !important; }
+</style>
 </head>
 <body style="margin:0;padding:0;background:#f4f4f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
 <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f5;padding:40px 16px;">
@@ -44,10 +64,13 @@ export function buildEmail(opts: {
 
       <!-- HEADER WITH LOGO -->
       <tr>
-        <td style="background:#18181b;padding:40px 32px 32px;">
+        <td style="padding:40px 32px 32px;">
           <div style="text-align:center; margin-bottom:32px;">
             <a href="https://e-dzwigi.pl" target="_blank" style="display:inline-block;">
-              <img src="cid:logo_dark" alt="Hydromont" style="height:100px;display:block;border:0;margin:0 auto;">
+              <img src="cid:logo_light" class="logo-light" alt="Hydromont" style="height:100px;display:block;border:0;margin:0 auto;">
+              <!--[if !mso]><!---->
+              <img src="cid:logo_dark" class="logo-dark" alt="Hydromont" style="height:100px;border:0;margin:0 auto;display:none;">
+              <!--<![endif]-->
             </a>
           </div>
           <table cellpadding="0" cellspacing="0" width="100%">
@@ -56,7 +79,7 @@ export function buildEmail(opts: {
               <td style="width:16px;"></td>
               <td>
                 <span style="display:block;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#F59E0B;margin-bottom:6px;">${badge}</span>
-                <span style="display:block;font-size:24px;font-weight:900;color:#ffffff;letter-spacing:-0.3px;margin-bottom:4px;">${heading}</span>
+                <span class="text-dark" style="display:block;font-size:24px;font-weight:900;color:#18181b;letter-spacing:-0.3px;margin-bottom:4px;">${heading}</span>
                 <span style="display:block;font-size:14px;color:#a1a1aa;">${subheading}</span>
               </td>
             </tr>
