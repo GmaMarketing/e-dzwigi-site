@@ -393,7 +393,7 @@ export default function RealizacjePage() {
         </AnimatePresence>
 
         {/* CTA Banner */}
-        <div className="mt-20 bg-zinc-900 rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden">
+        <div className="mt-20 rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden" style={{backgroundColor: '#1e2535'}}>
           <div className="relative z-10 max-w-2xl mx-auto">
             <h3 className="font-heading font-black text-3xl md:text-4xl mb-6">
               MASZ PODOBNE ZLECENIE? ZADZWOŃ – WYCENIAMY TEGO SAMEGO DNIA.
