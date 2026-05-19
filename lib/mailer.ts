@@ -42,9 +42,11 @@ export function buildEmail(opts: {
       <!-- HEADER WITH LOGO -->
       <tr>
         <td style="padding:40px 32px 32px;">
-          <a href="https://e-dzwigi.pl" target="_blank" style="display:block;margin-bottom:24px;">
-            <img src="cid:logo" alt="Hydromont" style="height:100px;display:block;border:0;">
-          </a>
+          <div style="text-align:center; margin-bottom:32px;">
+            <a href="https://e-dzwigi.pl" target="_blank" style="display:inline-block;">
+              <img src="cid:logo" alt="Hydromont" style="height:100px;display:block;border:0;margin:0 auto;">
+            </a>
+          </div>
           <table cellpadding="0" cellspacing="0" width="100%">
             <tr>
               <td style="width:4px;background:#F59E0B;border-radius:2px;vertical-align:top;">&nbsp;</td>
