@@ -37,19 +37,22 @@ export function buildEmail(opts: {
 <body style="margin:0;padding:0;background:#f4f4f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
 <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f5;padding:40px 16px;">
   <tr><td align="center">
-    <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+    <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.05);">
 
-      <!-- HEADER -->
+      <!-- HEADER WITH LOGO -->
       <tr>
-        <td style="background:#18181b;border-radius:16px 16px 0 0;padding:36px 32px;">
-          <table cellpadding="0" cellspacing="0">
+        <td style="padding:40px 32px 32px;">
+          <a href="https://e-dzwigi.pl" target="_blank" style="display:block;margin-bottom:24px;">
+            <img src="https://e-dzwigi.pl/Hydromont_logo.png" alt="Hydromont" style="height:48px;display:block;border:0;">
+          </a>
+          <table cellpadding="0" cellspacing="0" width="100%">
             <tr>
               <td style="width:4px;background:#F59E0B;border-radius:2px;vertical-align:top;">&nbsp;</td>
               <td style="width:16px;"></td>
               <td>
                 <span style="display:block;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#F59E0B;margin-bottom:6px;">${badge}</span>
-                <span style="display:block;font-size:22px;font-weight:900;color:#ffffff;letter-spacing:-0.3px;">${heading}</span>
-                <span style="display:block;font-size:13px;color:#71717a;margin-top:4px;">${subheading}</span>
+                <span style="display:block;font-size:24px;font-weight:900;color:#18181b;letter-spacing:-0.3px;margin-bottom:4px;">${heading}</span>
+                <span style="display:block;font-size:14px;color:#71717a;">${subheading}</span>
               </td>
             </tr>
           </table>
@@ -58,8 +61,8 @@ export function buildEmail(opts: {
 
       <!-- FIELDS -->
       <tr>
-        <td style="background:#ffffff;">
-          <table width="100%" cellpadding="0" cellspacing="0">
+        <td>
+          <table width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #f4f4f5;border-bottom:1px solid #f4f4f5;">
             ${fieldRows(fields)}
           </table>
         </td>
@@ -67,22 +70,24 @@ export function buildEmail(opts: {
 
       <!-- CTA -->
       <tr>
-        <td style="background:#ffffff;border-radius:0 0 16px 16px;padding:28px 32px 36px;">
+        <td style="padding:32px;text-align:left;">
           <a href="tel:+48508313906"
-             style="display:inline-block;background:#F59E0B;color:#ffffff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;padding:14px 28px;border-radius:10px;text-decoration:none;">
+             style="display:inline-block;background:#F59E0B;color:#ffffff;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;padding:16px 32px;border-radius:12px;text-decoration:none;">
             ${ctaLabel}
           </a>
         </td>
       </tr>
 
-      <!-- FOOTER -->
+    </table>
+
+    <!-- FOOTER -->
+    <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
       <tr>
-        <td style="padding:24px 0;text-align:center;">
-          <p style="margin:0;font-size:11px;color:#a1a1aa;">HYDROMONT S.C. &bull; ul. Dojazdowa 7, 43-100 Tychy &bull; NIP: 6462780604</p>
-          <p style="margin:6px 0 0;font-size:11px;color:#a1a1aa;">e-dzwigi.pl</p>
+        <td style="padding:24px 32px;text-align:center;">
+          <p style="margin:0;font-size:11px;color:#a1a1aa;line-height:1.6;">HYDROMONT S.C. &bull; ul. Dojazdowa 7, 43-100 Tychy &bull; NIP: 6462780604</p>
+          <p style="margin:4px 0 0;font-size:11px;color:#a1a1aa;"><a href="https://e-dzwigi.pl" style="color:#a1a1aa;text-decoration:none;">e-dzwigi.pl</a></p>
         </td>
       </tr>
-
     </table>
   </td></tr>
 </table>
