@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 const specs = [
   { value: "27m", label: "Wysokość robocza" },
-  { value: "18m", label: "Zasięg boczny" },
+  { value: "14,8m", label: "Zasięg boczny" },
   { value: "230kg", label: "Udźwig kosza" },
   { value: "Nissan NT400", label: "Podwozie" },
 ];
