@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!machine) return {};
 
   const title = `${machine.model} – ${machine.type} do wynajmu | e-dzwigi.pl`;
-  const description = `${machine.model} – ${machine.type}, udźwig ${machine.specs.liftingCapacity}, wysięgnik ${machine.specs.boomLength}. Wynajem na Śląsku. Sprawdź dostępność: 508 313 906`;
+  const description = `${machine.model} – ${machine.type} na Śląsku. ${machine.description.slice(0, 120)}... Sprawdź dostępność: 508 313 906`;
 
   return {
     title,
@@ -75,7 +75,8 @@ export default async function MachinePage({ params }: { params: Promise<{ slug: 
         </div>
         <div className="container mx-auto px-6 relative z-10 text-center">
             <span className="text-amber-400 font-bold tracking-widest uppercase mb-4 block">Specyfikacja Techniczna</span>
-            <h1 className="text-5xl md:text-7xl font-heading font-black mb-6">{machine.model}</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-black mb-6 leading-tight">{machine.seoH1}</h1>
+            <p className="text-zinc-400 font-mono text-sm mb-6">{machine.model}</p>
             <div className="flex justify-center gap-4 flex-wrap">
                 <span className="px-4 py-2 border border-white/20 rounded-full text-sm font-mono">{machine.type}</span>
                 <span className="px-4 py-2 bg-amber-500 text-white rounded-full text-sm font-bold uppercase tracking-widest">Dostępny</span>
@@ -113,7 +114,7 @@ export default async function MachinePage({ params }: { params: Promise<{ slug: 
                         {Object.entries(machine.specs).map(([key, value]) => (
                             <div key={key} className="bg-white p-6 rounded-2xl border border-zinc-100 shadow-sm flex items-center justify-between">
                                 <span className="text-zinc-400 text-sm font-bold uppercase tracking-wider">
-                                    {key.replace(/([A-Z])/g, ' $1').trim()}
+                                    {key}
                                 </span>
                                 <span className="text-zinc-900 font-heading font-black text-xl">
                                     {value}
