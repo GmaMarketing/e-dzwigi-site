@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { transporter, buildEmail } from "@/lib/mailer";
+import path from "path";
 
 export async function POST(req: NextRequest) {
   try {
@@ -41,10 +42,18 @@ export async function POST(req: NextRequest) {
       }),
     };
 
+    const attachments: any[] = [{
+      filename: 'Hydromont_logo.png',
+      path: path.join(process.cwd(), 'public', 'Hydromont_logo.png'),
+      cid: 'logo'
+    }];
+
     if (file && file.size > 0) {
       const buffer = Buffer.from(await file.arrayBuffer());
-      mailOptions.attachments = [{ filename: file.name, content: buffer }];
+      attachments.push({ filename: file.name, content: buffer });
     }
+    
+    mailOptions.attachments = attachments;
 
     await transporter.sendMail(mailOptions);
 

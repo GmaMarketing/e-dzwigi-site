@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { transporter, buildEmail } from "@/lib/mailer";
+import path from "path";
 
 export async function POST(req: NextRequest) {
   try {
@@ -30,6 +31,11 @@ export async function POST(req: NextRequest) {
         subheading: "e-dzwigi.pl",
         fields,
       }),
+      attachments: [{
+        filename: 'Hydromont_logo.png',
+        path: path.join(process.cwd(), 'public', 'Hydromont_logo.png'),
+        cid: 'logo'
+      }]
     });
 
     return NextResponse.json({ success: true });
