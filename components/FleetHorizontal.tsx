@@ -59,21 +59,17 @@ export function FleetHorizontal() {
     return () => ctx.revert();
   }, []);
 
-  // Slide transition: text from left, image from right
+  // Slide transition: animate only the text panel (images use CSS opacity crossfade)
   useLayoutEffect(() => {
     if (isFirstRender.current) {
       isFirstRender.current = false;
       return;
     }
-    if (!textRef.current || !imageRef.current) return;
+    if (!textRef.current) return;
     const ctx = gsap.context(() => {
       gsap.fromTo(textRef.current,
-        { x: -40, opacity: 0 },
-        { x: 0, opacity: 1, duration: 0.7, ease: "power3.out" }
-      );
-      gsap.fromTo(imageRef.current,
-        { x: 40, opacity: 0 },
-        { x: 0, opacity: 1, duration: 0.7, ease: "power3.out" }
+        { x: -30, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.55, ease: "power3.out" }
       );
     });
     return () => ctx.revert();
@@ -199,22 +195,27 @@ export function FleetHorizontal() {
               </div>
             </div>
 
-            {/* Right: horizontal image */}
+            {/* Right: preloaded image stack — all images rendered, only active one visible */}
             <div ref={imageRef} className="relative">
               <div className="relative w-full aspect-[16/10] max-h-full bg-zinc-200 rounded-sm overflow-hidden border border-zinc-200 shadow-2xl">
-                <Image
-                  src={machine.image}
-                  alt={machine.model}
-                  fill
-                  sizes="(max-width: 1024px) 50vw, 720px"
-                  priority={current === 0}
-                  className="object-cover"
-                />
+                {fleet.map((m, i) => (
+                  <Image
+                    key={m.slug}
+                    src={m.image}
+                    alt={m.model}
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 720px"
+                    priority
+                    className={`object-cover transition-opacity duration-700 ease-in-out ${
+                      i === current ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                ))}
                 {/* Subtle gradient for depth */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-zinc-950/40 via-transparent to-transparent pointer-events-none" />
                 {/* Decorative inner border */}
                 <div className="absolute top-5 left-5 right-5 bottom-5 border border-white/20 pointer-events-none" />
-                {/* Top-left meter badge */}
+                {/* Top-left meter badge — transitions with the text */}
                 <div className="absolute top-6 left-6 bg-amber-500 text-white py-2 px-4 shadow-lg">
                   <div className="font-heading font-black text-xl lg:text-2xl leading-none">
                     {machine.meter}
