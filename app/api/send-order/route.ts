@@ -42,11 +42,18 @@ export async function POST(req: NextRequest) {
       }),
     };
 
-    const attachments: any[] = [{
-      filename: 'Hydromont_logo.png',
-      path: path.join(process.cwd(), 'public', 'Hydromont_logo.png'),
-      cid: 'logo'
-    }];
+    const attachments: any[] = [
+      {
+        filename: 'Hydromont_logo.png',
+        path: path.join(process.cwd(), 'public', 'Hydromont_logo.png'),
+        cid: 'logo_light'
+      },
+      {
+        filename: 'Hydromont_white.png',
+        path: path.join(process.cwd(), 'public', 'Hydromont_white.png'),
+        cid: 'logo_dark'
+      }
+    ];
 
     if (file && file.size > 0) {
       const buffer = Buffer.from(await file.arrayBuffer());

@@ -31,11 +31,18 @@ export async function POST(req: NextRequest) {
         subheading: "e-dzwigi.pl",
         fields,
       }),
-      attachments: [{
-        filename: 'Hydromont_logo.png',
-        path: path.join(process.cwd(), 'public', 'Hydromont_logo.png'),
-        cid: 'logo'
-      }]
+      attachments: [
+        {
+          filename: 'Hydromont_logo.png',
+          path: path.join(process.cwd(), 'public', 'Hydromont_logo.png'),
+          cid: 'logo_light'
+        },
+        {
+          filename: 'Hydromont_white.png',
+          path: path.join(process.cwd(), 'public', 'Hydromont_white.png'),
+          cid: 'logo_dark'
+        }
+      ]
     });
 
     return NextResponse.json({ success: true });
