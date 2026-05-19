@@ -144,7 +144,7 @@ export const fleet: FleetMachine[] = [
     meter: "27m",
     specs: {
       workingHeight: "27m",
-      lateralReach: "18m",
+      lateralReach: "14,8m",
       liftingCapacity: "230kg",
       drive: "Nissan NT400",
     },
@@ -158,6 +158,6 @@ export const fleet: FleetMachine[] = [
     ],
     diagrams: [],
     isNew: true,
-    description: "Podnośnik koszowy Ruthmann TB 270.2 na podwoziu Nissana NT400. Wysokość robocza 27m i zasięg boczny 18m umożliwiają dotarcie do najtrudniejszych punktów na elewacji, dachu czy koronie drzewa – bez rusztowań i bez kompromisów. Idealny do prac elewacyjnych przy wysokich budynkach, wycinki i pielęgnacji drzew, montażu reklam i oświetlenia oraz wszelkich prac na wysokości do 9 kondygnacji."
+    description: "Podnośnik koszowy Ruthmann TB 270.2 na podwoziu Nissana NT400. Wysokość robocza 27m i zasięg boczny do 14,8m umożliwiają dotarcie do najtrudniejszych punktów na elewacji, dachu czy koronie drzewa – bez rusztowań i bez kompromisów. Idealny do prac elewacyjnych przy wysokich budynkach, wycinki i pielęgnacji drzew, montażu reklam i oświetlenia oraz wszelkich prac na wysokości do 9 kondygnacji."
   }
 ];
