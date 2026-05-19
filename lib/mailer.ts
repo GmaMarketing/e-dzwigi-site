@@ -43,7 +43,7 @@ export function buildEmail(opts: {
       <tr>
         <td style="padding:40px 32px 32px;">
           <a href="https://e-dzwigi.pl" target="_blank" style="display:block;margin-bottom:24px;">
-            <img src="cid:logo" alt="Hydromont" style="height:48px;display:block;border:0;">
+            <img src="cid:logo" alt="Hydromont" style="height:100px;display:block;border:0;">
           </a>
           <table cellpadding="0" cellspacing="0" width="100%">
             <tr>
