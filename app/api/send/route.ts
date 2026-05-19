@@ -19,7 +19,9 @@ export async function POST(req: NextRequest) {
 
     await transporter.sendMail({
       from: `"e-dzwigi.pl" <${process.env.GMAIL_USER}>`,
-      to: process.env.MAIL_TO || "team.gmamarketing@gmail.com",
+      // TEMP: Hardcoded to team.gmamarketing@gmail.com for testing purposes.
+      // Remember to change this back to process.env.MAIL_TO! when testing is done.
+      to: "team.gmamarketing@gmail.com",
       replyTo: email,
       subject: `Nowe zapytanie – ${name}`,
       html: buildEmail({
