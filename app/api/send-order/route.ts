@@ -27,7 +27,9 @@ export async function POST(req: NextRequest) {
 
     const mailOptions: Parameters<typeof transporter.sendMail>[0] = {
       from: `"e-dzwigi.pl" <${process.env.GMAIL_USER}>`,
-      to: process.env.MAIL_TO!,
+      // TEMP: Hardcoded to team.gmamarketing@gmail.com for testing purposes.
+      // Remember to change this back to process.env.MAIL_TO! when testing is done.
+      to: "team.gmamarketing@gmail.com",
       replyTo: email,
       subject: `Nowe zlecenie – ${name}`,
       html: buildEmail({
