@@ -19,7 +19,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "zuraw-samojezdny-90t",
     model: "Liebherr LTM 1090",
-    seoH1: "Wynajem Żurawia 90T – Montaże Przemysłowe i Ciężkie Przeładunki na Śląsku",
+    seoH1: "Wynajem Żurawia 90T – Śląsk",
     displayName: "CIĘŻKIE MONTAŻE",
     type: "Żuraw Samojezdny",
     displayType: "Żuraw samojezdny – Śląsk",
@@ -45,7 +45,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "zuraw-samojezdny-50t",
     model: "Liebherr LTM 1050",
-    seoH1: "Wynajem Żurawia 50T – Budowa Hal, Montaż Stropów i Dachów na Śląsku",
+    seoH1: "Wynajem Żurawia 50T – Śląsk",
     displayName: "MIASTO I CIASNE PLACE",
     type: "Żuraw Samojezdny",
     displayType: "Żuraw samojezdny – Śląsk",
@@ -70,7 +70,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "zuraw-samojezdny-35t",
     model: "Liebherr LTM 1030/2",
-    seoH1: "Wynajem Żurawia 35T – Budowa Hal Produkcyjnych i Placów Budowy na Śląsku",
+    seoH1: "Wynajem Żurawia 35T – Śląsk",
     displayName: "HALE I PLACE BUDOWY",
     type: "Żuraw Samojezdny",
     displayType: "Żuraw samojezdny – Śląsk",
@@ -95,7 +95,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "zuraw-samojezdny-25t",
     model: "Liebherr LTM 1025",
-    seoH1: "Wynajem Żurawia 25T – Budowa Domów Jednorodzinnych i Ciasna Zabudowa Śląsk",
+    seoH1: "Wynajem Żurawia 25T – Śląsk",
     displayName: "DOMY I CIASNE ZABUDOWY",
     type: "Żuraw Samojezdny",
     displayType: "Żuraw samojezdny – Śląsk",
@@ -121,7 +121,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "podnosnik-koszowy-21m",
     model: "GSR E 209 PX",
-    seoH1: "Wynajem Podnośnika Koszowego 21m – Prace Elewacyjne, Wycinka Drzew i Montaż Reklam Śląsk",
+    seoH1: "Wynajem Podnośnika 21m – Śląsk",
     displayName: "ELEWACJE I WYCINKA",
     type: "Podnośnik Koszowy",
     displayType: "Podnośnik koszowy – Śląsk",
@@ -144,7 +144,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "podnosnik-koszowy-ruthmann-27m",
     model: "Ruthmann TB 270.2",
-    seoH1: "Wynajem Podnośnika Koszowego 27m – Prace Elewacyjne, Wycinka Drzew i Mycie Fasad Śląsk",
+    seoH1: "Wynajem Podnośnika 27m – Śląsk",
     displayName: "FASADY I WYCINKA",
     type: "Podnośnik Koszowy",
     displayType: "Podnośnik koszowy – Śląsk",
