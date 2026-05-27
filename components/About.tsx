@@ -71,12 +71,12 @@ export function About() {
                 
                 <div className="space-y-8 text-lg text-zinc-900 leading-relaxed max-w-xl">
                     <p>
-                        Wynajmujemy dźwigi samojezdne i podnośniki koszowe na terenie całego Śląska.
-                        Zadzwoń – przyjeżdżamy, wyceniamy i działamy jeszcze tego samego dnia.
+                        Wynajem dźwigów samojezdnych i podnośników koszowych na Śląsku - to nasza robota.
+                        Zadzwoń, powiemy cenę, przyjedziemy i zrobimy.
                     </p>
                     <p>
-                        Obsługujemy budowy, inwestycje przemysłowe i trudne zlecenia, na których innym firmom
-                        brakuje sprzętu lub odwagi. Tychy, Katowice, Gliwice, Zabrze i cały Śląsk.
+                        Budowy, hale, trudne miejsca - nie odmawiamy. Tychy, Katowice, Gliwice, Zabrze
+                        i cały Śląsk. Ponad 20 lat w branży i dobrze wiemy co robimy.
                     </p>
                 </div>
 

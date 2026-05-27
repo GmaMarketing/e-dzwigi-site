@@ -66,7 +66,7 @@ export function Hero() {
                 transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                 className="text-lg md:text-xl text-zinc-300 leading-relaxed font-light"
             >
-                Żurawie samojezdne i podnośniki koszowe – wycena tego samego dnia.
+                Żurawie samojezdne i podnośniki koszowe - wycena tego samego dnia.
             </motion.p>
         </div>
 

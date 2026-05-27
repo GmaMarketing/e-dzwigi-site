@@ -92,7 +92,7 @@ export default function OfferPage() {
                 USŁUGI DŹWIGOWE <br /> I PODNOŚNIKOWE
             </h2>
             <p className="text-zinc-900 text-lg leading-relaxed">
-                Powiedz nam co chcesz zrobić – dobierzemy dźwig, przyjedziemy i wykonamy robotę. Obsługujemy budowy, montaże, prace specjalne i zlecenia których inni nie chcą się podjąć.
+                Powiedz nam co chcesz zrobić - dobierzemy dźwig, przyjedziemy i zrobimy robotę. Budowy, montaże, zlecenia specjalne. Bez zbędnego gadania.
             </p>
         </div>
 
@@ -128,10 +128,10 @@ export default function OfferPage() {
         <div className="mt-16 rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden" style={{backgroundColor: '#1e2535'}}>
             <div className="relative z-10 max-w-2xl mx-auto">
                 <h3 className="font-heading font-black text-3xl md:text-4xl mb-6">
-                    MASZ ZLECENIE? ZADZWOŃ – WYCENIAMY TEGO SAMEGO DNIA.
+                    MASZ ZLECENIE? ZADZWOŃ - WYCENIAMY TEGO SAMEGO DNIA.
                 </h3>
                 <p className="text-white text-lg leading-relaxed mb-8">
-                    Każde zlecenie wyceniamy bezpłatnie. Dyspozytor dostępny 24h – zadzwoń: <span className="whitespace-nowrap">508 313 906</span>
+                    Każde zlecenie wyceniamy bezpłatnie. Dyspozytor dostępny 24h - zadzwoń: <span className="whitespace-nowrap">508 313 906</span>
                 </p>
                 <Link href="/kontakt" className="inline-block bg-amber-500 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:bg-white hover:text-amber-500 transition-all">
                     Zamów wycenę

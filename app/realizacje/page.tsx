@@ -18,7 +18,7 @@ const allImages: ImgEntry[] = [
   { file: "budowa-obiektu-przemyslowego-slask-21m.webp",         category: "m21 przemysl",              overlay: "Budowa obiektu przemysłowego · Śląsk",         alt: "Podnośnik koszowy 21m budowa obiektu przemysłowego Śląsk – e-dzwigi.pl" },
   { file: "elewacja-obiekt-handlowy-21m.webp",                   category: "m21 elewacje",              overlay: "Elewacja obiektu handlowego · Śląsk",          alt: "Podnośnik koszowy 21m elewacja obiekt handlowy Śląsk – e-dzwigi.pl" },
   { file: "instalacji-przemyslowej-slask-21m.webp",              category: "m21 przemysl montaz",       overlay: "Instalacja przemysłowa · Śląsk",               alt: "Podnośnik koszowy 21m instalacja przemysłowa Śląsk – e-dzwigi.pl" },
-  { file: "montaz-reklamy-nocna-realizacja-21m.webp",            category: "m21 montaz nocne",          overlay: "Montaż reklamy – nocna realizacja",            alt: "Podnośnik koszowy 21m montaż reklamy nocna realizacja Śląsk – e-dzwigi.pl" },
+  { file: "montaz-reklamy-nocna-realizacja-21m.webp",            category: "m21 montaz nocne",          overlay: "Montaż reklamy - nocna realizacja",            alt: "Podnośnik koszowy 21m montaż reklamy nocna realizacja Śląsk – e-dzwigi.pl" },
   { file: "montaz-reklamy-obiekt-handlowy-21m.webp",             category: "m21 montaz",                overlay: "Montaż reklamy obiekt handlowy · Śląsk",      alt: "Podnośnik koszowy 21m montaż reklamy obiekt handlowy Śląsk – e-dzwigi.pl" },
   { file: "montaz-rynny-dom-slask-21m.webp",                     category: "m21 montaz budownictwo",    overlay: "Montaż rynny · dom · Śląsk",                  alt: "Podnośnik koszowy 21m montaż rynny dom Śląsk – e-dzwigi.pl" },
   { file: "montaz-slupa-oswietleniowego-droga-21m.webp",         category: "m21 montaz",                overlay: "Montaż słupa oświetleniowego · Śląsk",        alt: "Podnośnik koszowy 21m montaż słupa oświetleniowego droga Śląsk – e-dzwigi.pl" },
@@ -114,7 +114,7 @@ const allLabels: Record<string, string> = {
   all:          "Wszystkie realizacje",
   m21:          "Podnośnik koszowy 21m",
   m26:          "Dźwig 26m",
-  m27:          "Podnośnik koszowy 27m — Ruthmann TB 270.2",
+  m27:          "Podnośnik koszowy 27m - Ruthmann TB 270.2",
   m30:          "Dźwig samojezdny 30m",
   m40:          "Dźwig / Podnośnik 40m",
   m52:          "Dźwig samojezdny 52m",
@@ -180,7 +180,7 @@ export default function RealizacjePage() {
             DŹWIGI W AKCJI NA ŚLĄSKU
           </h1>
           <p className="text-zinc-500 max-w-2xl text-lg leading-relaxed">
-            Ponad 50 realizacji rocznie – żurawie samojezdne i podnośniki koszowe przy budowach, montażach i pracach specjalnych w Tychach, Katowicach, Gliwicach i całym Śląsku.
+            Ponad 50 zleceń rocznie. Żurawie i podnośniki koszowe przy budowach, montażach i zleceniach specjalnych. Tychy, Katowice, Gliwice i cały Śląsk.
           </p>
         </div>
 
@@ -259,7 +259,7 @@ export default function RealizacjePage() {
                   Wszystkie
                 </button>
                 <span className="text-white text-xs">
-                  — lub wybierz filtr poniżej
+                  - lub wybierz filtr poniżej
                 </span>
               </div>
 
@@ -396,10 +396,10 @@ export default function RealizacjePage() {
         <div className="mt-20 rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden" style={{backgroundColor: '#1e2535'}}>
           <div className="relative z-10 max-w-2xl mx-auto">
             <h3 className="font-heading font-black text-3xl md:text-4xl mb-6">
-              MASZ PODOBNE ZLECENIE? ZADZWOŃ – WYCENIAMY TEGO SAMEGO DNIA.
+              MASZ PODOBNE ZLECENIE? ZADZWOŃ - WYCENIAMY TEGO SAMEGO DNIA.
             </h3>
             <p className="text-zinc-400 text-lg leading-relaxed mb-8">
-              Każde zlecenie wyceniamy bezpłatnie. Dyspozytor dostępny 24h – zadzwoń: <span className="whitespace-nowrap">508 313 906</span>
+              Każde zlecenie wyceniamy bezpłatnie. Dyspozytor dostępny 24h - zadzwoń: <span className="whitespace-nowrap">508 313 906</span>
             </p>
             <Link
               href="/kontakt"

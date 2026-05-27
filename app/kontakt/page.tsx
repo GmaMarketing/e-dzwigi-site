@@ -74,7 +74,7 @@ export default function ContactPage() {
                 ZAMÓW DŹWIG LUB ZAPYTAJ <br /> O WYCENĘ
             </h1>
             <p className="text-zinc-900 text-lg leading-relaxed max-w-lg">
-                Zadzwoń, napisz lub wypełnij formularz – odpowiemy tego samego dnia.
+                Zadzwoń, napisz lub wypełnij formularz - odpowiemy tego samego dnia.
                 Dyspozytor dostępny całą dobę.
             </p>
           </div>
@@ -163,7 +163,7 @@ export default function ContactPage() {
                       name="message"
                       required
                       className="h-full min-h-[120px] w-full resize-none rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 placeholder:text-zinc-400 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none transition-all"
-                      placeholder="Opisz zlecenie – rodzaj pracy, miasto, orientacyjny termin"
+                      placeholder="Opisz zlecenie - rodzaj pracy, miasto, orientacyjny termin"
                     />
                   </div>
                   <div className="pt-6">
@@ -291,7 +291,7 @@ export default function ContactPage() {
                 </h3>
                 <address className="not-italic text-zinc-600 space-y-2">
                     <strong className="block text-zinc-900 text-lg mb-2">HYDROMONT S.C.</strong>
-                    <p>Wynajem dźwigów samojezdnych i podnośników koszowych – Śląsk</p>
+                    <p>Wynajem dźwigów samojezdnych i podnośników koszowych - Śląsk</p>
                     <div className="mt-4 pt-4 border-t border-zinc-100">
                          <p>ul. Dojazdowa 7</p>
                          <p>43-100 Tychy</p>

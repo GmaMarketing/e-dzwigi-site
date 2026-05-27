@@ -40,7 +40,7 @@ export const fleet: FleetMachine[] = [
       "https://e-dzwigi.pl/files/liebherr-1090-wymiary-001.webp",
       "https://e-dzwigi.pl/files/liebherr-1090-zasi-g-001.webp"
     ],
-    description: "Żuraw szosowo-terenowy o udźwigu 90 ton. Charakteryzuje się długim wysięgnikiem teleskopowym oraz doskonałymi parametrami udźwigowymi w całym zakresie pracy. Idealny do ciężkich prac montażowych i przeładunkowych."
+    description: "Żuraw 90 ton na Śląsku - największy w naszej flocie. Wysięgnik 52m, podnoszenie do 75m. Jak trzeba coś ciężkiego przenieść tam gdzie inne żurawie nie dają rady - tu jest odpowiedź."
   },
   {
     slug: "zuraw-samojezdny-50t",
@@ -65,7 +65,7 @@ export const fleet: FleetMachine[] = [
     diagrams: [
       "https://e-dzwigi.pl/files/diagram-ltm-1050.webp"
     ],
-    description: "Ekonomiczny i mobilny żuraw 3-osiowy. Idealny do prac w miejskich warunkach dzięki kompaktowej budowie. Wyposażony w długi wysięgnik teleskopowy i bocianka."
+    description: "Żuraw 50 ton, 3-osiowy, wchodzi tam gdzie większy nie wjedzie. Dobry do miasta, ciasnych placów i budów z ograniczonym dojazdem. Wysięgnik 40m, sprawdzony na Śląsku."
   },
   {
     slug: "zuraw-samojezdny-35t",
@@ -90,7 +90,7 @@ export const fleet: FleetMachine[] = [
     diagrams: [
       "https://e-dzwigi.pl/files/liebherr-1030-wymiary-001_d.webp"
     ],
-    description: "Sprawdzona konstrukcja 2-osiowa. Wysoka zwrotność i szybkość operacyjna. Doskonały do mniejszych placów budowy i hal produkcyjnych."
+    description: "Żuraw 35 ton na 2 osiach - zwrotny i szybki w ustawieniu. Dobrze sprawdza się przy halach, średnich budowach i montażach konstrukcji. Wysięgnik 30m."
   },
   {
     slug: "zuraw-samojezdny-25t",
@@ -116,7 +116,7 @@ export const fleet: FleetMachine[] = [
       "https://e-dzwigi.pl/files/liebherr-1025-zasi-g-001_d.webp",
       "https://e-dzwigi.pl/files/liebherr-1025-wymiary-001_d.webp"
     ],
-    description: "Kompaktowy żuraw do zadań specjalnych w ciasnych zabudowaniach. Niezastąpiony przy budowie domów jednorodzinnych."
+    description: "Najmniejszy żuraw z floty, ale nie mniej ważny. 25 ton udźwigu, wjeżdża wszędzie. Ulubiony przy budowach domów i ciasnych zabudowaniach gdzie większy by nie stanął."
   },
   {
     slug: "podnosnik-koszowy-21m",
@@ -139,7 +139,7 @@ export const fleet: FleetMachine[] = [
       "/gallery/nocna-realizacja-podnosnik-tychy-40m.webp",
     ],
     diagrams: [],
-    description: "Podnośnik koszowy na podwoziu Nissana. Lekki, zwrotny, idealny do prac elewacyjnych, wycinki drzew i montażu reklam."
+    description: "Podnośnik koszowy 21m na Nissanie - lekki, zwrotny, wejdzie w wąski przejazd. Sprawdza się przy elewacjach, myciu okien, wycince drzew i montażu reklam na Śląsku."
   },
   {
     slug: "podnosnik-koszowy-ruthmann-27m",
@@ -165,6 +165,6 @@ export const fleet: FleetMachine[] = [
     ],
     diagrams: [],
     isNew: true,
-    description: "Podnośnik koszowy Ruthmann TB 270.2 na podwoziu Nissana NT400. Wysokość robocza 27m i zasięg boczny do 14,8m umożliwiają dotarcie do najtrudniejszych punktów na elewacji, dachu czy koronie drzewa – bez rusztowań i bez kompromisów. Idealny do prac elewacyjnych przy wysokich budynkach, wycinki i pielęgnacji drzew, montażu reklam i oświetlenia oraz wszelkich prac na wysokości do 9 kondygnacji."
+    description: "Ruthmann TB 270.2 na Nissanie NT400 - nasz najnowszy podnośnik koszowy. 27m wysokości roboczej, zasięg boczny do 14,8m. Dociera do elewacji, dachów i koron drzew bez żadnych rusztowań. Do 9 pięter bez problemu. Dostępny na Śląsku."
   }
 ];

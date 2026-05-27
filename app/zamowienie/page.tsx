@@ -96,7 +96,7 @@ export default function OrderPage() {
           </h1>
           <p className="text-zinc-500 max-w-2xl text-lg">
             Pobierz, wypełnij i odeślij formularz zamówienia, aby zarezerwować termin.<br />
-            Formularz jest interaktywny – możesz go wypełnić bezpośrednio w przeglądarce przed wysłaniem.
+            Formularz jest interaktywny - możesz go wypełnić bezpośrednio w przeglądarce przed wysłaniem.
           </p>
         </div>
 
@@ -236,7 +236,7 @@ export default function OrderPage() {
               Wyślij wypełniony formularz
             </h2>
             <p className="text-zinc-500 text-lg max-w-2xl">
-              Wypełnij formularz powyżej, następnie podaj dane kontaktowe i wyślij –
+              Wypełnij formularz powyżej, następnie podaj dane kontaktowe i wyślij -
               oddzwonimy tego samego dnia.
             </p>
           </div>
@@ -320,7 +320,7 @@ export default function OrderPage() {
                   className="w-full cursor-pointer rounded-xl border border-zinc-200 bg-white px-4 py-3 text-zinc-900 file:mr-4 file:cursor-pointer file:rounded-lg file:border-0 file:bg-zinc-900 file:px-4 file:py-1.5 file:text-xs file:font-bold file:uppercase file:tracking-wider file:text-white file:transition-all hover:file:bg-amber-500 outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 transition-all"
                 />
                 <p className="text-xs text-zinc-400 mt-1.5">
-                  Jeśli wypełniłeś PDF offline – możesz go tutaj załączyć
+                  Jeśli wypełniłeś PDF offline - możesz go tutaj załączyć
                 </p>
               </div>
 
@@ -390,7 +390,7 @@ export default function OrderPage() {
           <div className="bg-white p-6 rounded-2xl border border-zinc-100">
             <span className="text-4xl font-black text-amber-500 mb-4 block">02</span>
             <h3 className="font-bold text-zinc-900 mb-2">Wyślij dane kontaktowe</h3>
-            <p className="text-sm text-zinc-500">Podaj telefon i mail – skontaktujemy się tego samego dnia.</p>
+            <p className="text-sm text-zinc-500">Podaj telefon i mail - skontaktujemy się tego samego dnia.</p>
           </div>
           <div className="bg-white p-6 rounded-2xl border border-zinc-100">
             <span className="text-4xl font-black text-amber-500 mb-4 block">03</span>

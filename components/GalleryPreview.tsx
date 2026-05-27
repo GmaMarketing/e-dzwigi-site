@@ -10,7 +10,7 @@ const categories = [
   {
     id: "budownictwo",
     label: "Budownictwo",
-    desc: "Bloki mieszkalne, domy jednorodzinne, osiedla – dźwig na każdym etapie budowy.",
+    desc: "Bloki mieszkalne, domy jednorodzinne, osiedla - dźwig na każdym etapie budowy.",
     count: 14,
     images: [
       { src: "/gallery/prace-przy-bloku-mieszkalnym-tychy-30m.webp",  alt: "Dźwig samojezdny prace przy bloku mieszkalnym Tychy – e-dzwigi.pl" },
@@ -58,7 +58,7 @@ const categories = [
   {
     id: "nocne",
     label: "Prace nocne",
-    desc: "Realizacje 24h – tam gdzie liczy się czas i brak utrudnień w ruchu.",
+    desc: "Realizacje 24h - tam gdzie liczy się czas i brak utrudnień w ruchu.",
     count: 7,
     images: [
       { src: "/gallery/nocny-montaz-maszyny-przemyslowej-slask-30m.webp",  alt: "Dźwig samojezdny nocna realizacja montaż maszyny przemysłowej Śląsk – e-dzwigi.pl" },
@@ -95,8 +95,8 @@ export function GalleryPreview() {
               CO ROBIMY<br />NA CO DZIEŃ
             </h2>
             <p className="text-zinc-900 text-lg leading-relaxed">
-              Kilkaset zleceń rocznie w każdych warunkach –
-              od bloków mieszkalnych po nocne montaże w halach przemysłowych.
+              Kilkaset zleceń rocznie - od bloków mieszkalnych po nocne montaże w halach.
+              Każde zdjęcie to prawdziwa robota, nie sesja zdjęciowa.
             </p>
           </div>
           <Link

@@ -102,8 +102,8 @@ export function NewEquipment() {
             transition={{ duration: 0.65, delay: 0.28 }}
             className="text-zinc-400 max-w-md leading-relaxed text-sm mb-8 border-l-2 border-amber-500 pl-5"
           >
-            Firma się rozwija. Pozyskaliśmy nowy podnośnik koszowy Ruthmann TB 270.2 na podwoziu Nissana NT400 —
-            większy zasięg, lepsza dostępność i więcej możliwości dla naszych klientów na Śląsku.
+            Mamy nowy podnośnik koszowy Ruthmann TB 270.2 na Nissanie NT400 - wyżej, dalej i bardziej dostępny.
+            Klienci na Śląsku wiedzą już, że warto zadzwonić.
           </motion.p>
 
           {/* CTA */}

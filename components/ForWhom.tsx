@@ -8,22 +8,22 @@ export function ForWhom() {
     {
       icon: <Factory size={32} />,
       title: "Renomowane Firmy",
-      desc: "Kompleksowa obsługa dużych inwestycji przemysłowych i infrastrukturalnych. Współpracujemy z liderami rynku."
+      desc: "Obsługujemy duże firmy i inwestycje przemysłowe. Wiemy jak pracować na dużych placach i pod terminy."
     },
     {
       icon: <Home size={32} />,
       title: "Klienci Indywidualni",
-      desc: "Fachowa pomoc przy budowie domów, montażu elementów i pracach na wysokościach dla inwestorów prywatnych."
+      desc: "Budujesz dom? Potrzebujesz dźwigu na jeden dzień? Zadzwoń - przyjedziemy, pomożemy, nie naciągniemy."
     },
     {
       icon: <Building2 size={32} />,
       title: "Place Budowy",
-      desc: "Wsparcie deweloperów i firm budowlanych w zakresie transportu pionowego i montażu konstrukcji."
+      desc: "Wjazd na plac, ustawienie, robota. Podnoszenie elementów, montaż konstrukcji - wszystko na miejscu."
     },
     {
       icon: <Briefcase size={32} />,
       title: "Zlecenia Specjalne",
-      desc: "Nietypowe montaże, relokacje maszyn i zadania wymagające precyzji oraz indywidualnego planowania."
+      desc: "Trudny dojazd, ciasna zabudowa, nocna zmiana? To nasze klimaty. Dzwonią do nas kiedy inni odmawiają."
     }
   ];
 
@@ -43,7 +43,7 @@ export function ForWhom() {
                 <span className="text-amber-500">PRACUJEMY?</span>
             </h2>
             <p className="text-gray-200 text-lg leading-relaxed max-w-2xl">
-                Nieważne czy to duża inwestycja przemysłowa czy budowa domu jednorodzinnego — przyjeżdżamy, wyceniamy i działamy tego samego dnia.
+                Nieważne czy to duża inwestycja przemysłowa czy budowa domu jednorodzinnego - przyjeżdżamy, wyceniamy i działamy tego samego dnia.
             </p>
         </div>
 

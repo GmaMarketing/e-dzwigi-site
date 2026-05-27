@@ -44,8 +44,8 @@ export function ServiceMap() {
           </h2>
 
           <p className="text-lg leading-relaxed mb-10 max-w-md" style={{color: '#e5e7eb'}}>
-            Baza w Tychach, zasięg na cały Śląsk. Dojazd do Katowic, Gliwic, Sosnowca,
-            Rybnika i okolic - zazwyczaj poniżej 60 minut.
+            Jesteśmy z Tychów, działamy na całym Śląsku. Do Katowic, Gliwic, Sosnowca, Rybnika
+            dojeżdżamy zwykle w niespełna godzinę.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">

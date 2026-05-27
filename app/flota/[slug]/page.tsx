@@ -170,8 +170,8 @@ export default async function MachinePage({ params }: { params: Promise<{ slug: 
                 
                 {/* Contact Card */}
                 <div className="text-white p-8 rounded-3xl shadow-xl sticky top-32 z-10" style={{backgroundColor: '#1e2535'}}>
-                    <h3 className="text-xl font-bold mb-2">Zainteresowany?</h3>
-                    <p className="text-white text-sm mb-8">Skontaktuj się z nami, aby sprawdzić dostępność i cenę wynajmu.</p>
+                    <h3 className="text-xl font-bold mb-2">Potrzebujesz tego sprzętu?</h3>
+                    <p className="text-white text-sm mb-8">Zadzwoń lub napisz - powiemy czy jest wolny i ile kosztuje.</p>
                     
                     <a href="tel:+48508313906" className="block w-full py-4 bg-amber-500 hover:bg-white hover:text-amber-500 text-center rounded-xl font-bold uppercase tracking-widest transition-all mb-4">
                         Zadzwoń Teraz
