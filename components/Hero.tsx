@@ -88,9 +88,9 @@ export function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div 
+      <motion.div
         style={{ opacity }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/30 flex flex-col items-center gap-4"
+        className="hidden md:flex absolute bottom-12 left-1/2 -translate-x-1/2 text-white/30 flex-col items-center gap-4"
       >
           <span className="text-[10px] uppercase tracking-[0.4em] font-bold">Przewiń</span>
           <div className="w-[1px] h-12 bg-gradient-to-b from-amber-500 to-transparent" />

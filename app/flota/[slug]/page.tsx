@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const machine = fleet.find((m) => m.slug === slug);
   if (!machine) return {};
 
-  const title = `${machine.model} – ${machine.type} do wynajmu | e-dzwigi.pl`;
-  const description = `${machine.model} – ${machine.type} na Śląsku. ${machine.description.slice(0, 120)}... Sprawdź dostępność: 508 313 906`;
+  const title = `${machine.seoH1} | e-dzwigi.pl`;
+  const description = `${machine.seoH1}. ${machine.model}. ${machine.description.slice(0, 120)}... Sprawdź dostępność: 508 313 906`;
 
   return {
     title,

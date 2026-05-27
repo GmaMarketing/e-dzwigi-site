@@ -69,11 +69,14 @@ export default function OfferPage() {
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
                   <div className="font-heading font-black text-3xl text-amber-500 leading-none mb-3 select-none">
-                    {card.capacity}
+                    {card.meter}
                   </div>
-                  <h2 className="font-heading font-black text-sm text-zinc-900 uppercase leading-tight mb-2">
+                  <h2 className="font-heading font-black text-sm text-zinc-900 uppercase leading-tight mb-1">
                     {card.name}
                   </h2>
+                  <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-widest mb-2">
+                    {card.capacity}
+                  </p>
                   <p className="text-[10px] text-zinc-400 font-mono uppercase tracking-wider pt-3 border-t border-zinc-100 mb-4">
                     {card.specs}
                   </p>

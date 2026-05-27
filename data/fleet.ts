@@ -19,7 +19,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "zuraw-samojezdny-90t",
     model: "Liebherr LTM 1090",
-    seoH1: "Wynajem Żurawia 90T – Śląsk",
+    seoH1: "Wynajem Żurawia Samojezdnego 52m - Śląsk",
     displayName: "CIĘŻKIE MONTAŻE",
     type: "Żuraw Samojezdny",
     displayType: "Żuraw samojezdny – Śląsk",
@@ -45,7 +45,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "zuraw-samojezdny-50t",
     model: "Liebherr LTM 1050",
-    seoH1: "Wynajem Żurawia 50T – Śląsk",
+    seoH1: "Wynajem Żurawia Samojezdnego 40m - Śląsk",
     displayName: "MIASTO I CIASNE PLACE",
     type: "Żuraw Samojezdny",
     displayType: "Żuraw samojezdny – Śląsk",
@@ -70,7 +70,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "zuraw-samojezdny-35t",
     model: "Liebherr LTM 1030/2",
-    seoH1: "Wynajem Żurawia 35T – Śląsk",
+    seoH1: "Wynajem Żurawia Samojezdnego 30m - Śląsk",
     displayName: "HALE I PLACE BUDOWY",
     type: "Żuraw Samojezdny",
     displayType: "Żuraw samojezdny – Śląsk",
@@ -95,7 +95,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "zuraw-samojezdny-25t",
     model: "Liebherr LTM 1025",
-    seoH1: "Wynajem Żurawia 25T – Śląsk",
+    seoH1: "Wynajem Żurawia Samojezdnego 26m - Śląsk",
     displayName: "DOMY I CIASNE ZABUDOWY",
     type: "Żuraw Samojezdny",
     displayType: "Żuraw samojezdny – Śląsk",
@@ -121,7 +121,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "podnosnik-koszowy-21m",
     model: "GSR E 209 PX",
-    seoH1: "Wynajem Podnośnika 21m – Śląsk",
+    seoH1: "Wynajem Podnośnika Koszowego 21m - Śląsk",
     displayName: "ELEWACJE I WYCINKA",
     type: "Podnośnik Koszowy",
     displayType: "Podnośnik koszowy – Śląsk",
@@ -144,7 +144,7 @@ export const fleet: FleetMachine[] = [
   {
     slug: "podnosnik-koszowy-ruthmann-27m",
     model: "Ruthmann TB 270.2",
-    seoH1: "Wynajem Podnośnika 27m – Śląsk",
+    seoH1: "Wynajem Podnośnika Koszowego 27m - Śląsk",
     displayName: "FASADY I WYCINKA",
     type: "Podnośnik Koszowy",
     displayType: "Podnośnik koszowy – Śląsk",
