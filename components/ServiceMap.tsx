@@ -13,12 +13,20 @@ import polandGeo from "../data/poland-provinces.json";
 const cities = [
   "Tychy",
   "Katowice",
-  "Gliwice",
   "Sosnowiec",
-  "Bielsko-Biała",
-  "Rybnik",
-  "Dąbrowa Górnicza",
-  "Chorzów",
+  "Jaworzno",
+  "Mysłowice",
+  "Mikołów",
+  "Pszczyna",
+  "Bieruń",
+  "Łaziska Górne",
+  "Lędziny",
+  "Orzesze",
+  "Imielin",
+  "Bojszowy",
+  "Wyry",
+  "Ornontowice",
+  "Chełm Śląski",
 ];
 
 const polandCenter = createCoordinates(19.5, 52);
@@ -44,8 +52,8 @@ export function ServiceMap() {
           </h2>
 
           <p className="text-lg leading-relaxed mb-10 max-w-md" style={{color: '#e5e7eb'}}>
-            Jesteśmy z Tychów, działamy na całym Śląsku. Do Katowic, Gliwic, Sosnowca, Rybnika
-            dojeżdżamy zwykle w niespełna godzinę.
+            Baza w Tychach, obsługujemy Katowice, Mysłowice, Jaworzno, Mikołów, Pszczynę i wszystkie
+            miejscowości w promieniu 25km - zazwyczaj jesteśmy na miejscu w 30-40 minut.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">

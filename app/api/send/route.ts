@@ -33,13 +33,13 @@ export async function POST(req: NextRequest) {
       }),
       attachments: [
         {
-          filename: 'Hydromont_logo.png',
-          path: path.join(process.cwd(), 'public', 'Hydromont_logo.png'),
+          filename: 'e-dzwigi.png',
+          path: path.join(process.cwd(), 'public', 'e-dzwigi.png'),
           cid: 'logo_light'
         },
         {
-          filename: 'Hydromont_white.png',
-          path: path.join(process.cwd(), 'public', 'Hydromont_white.png'),
+          filename: 'e-dzwigi-white.png',
+          path: path.join(process.cwd(), 'public', 'e-dzwigi-white.png'),
           cid: 'logo_dark'
         }
       ]

@@ -30,7 +30,7 @@ export function PageLoader() {
             className="relative w-80 h-28"
           >
             <Image
-              src="/Hydromont_white.png"
+              src="/e-dzwigi-white.png"
               alt="Hydromont"
               fill
               className="object-contain"

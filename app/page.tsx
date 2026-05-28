@@ -14,7 +14,7 @@ const ServiceMap = dynamic(() => import("@/components/ServiceMap").then((m) => m
 export const metadata: Metadata = {
   title: "Wynajem Dźwigów Śląsk | e-dzwigi.pl - Tychy i okolice",
   description:
-    "Wynajem dźwigów samojezdnych i podnośników koszowych na Śląsku. e-dzwigi.pl - Tychy, Katowice, Gliwice. Wycena tego samego dnia. Dyspozytor 24h: 508 313 906",
+    "Wynajem dźwigów samojezdnych i podnośników koszowych. Tychy, Katowice, Sosnowiec, Jaworzno i okolice. Wycena tego samego dnia. Dyspozytor 24h: 508 313 906",
   alternates: {
     canonical: "https://e-dzwigi.pl/",
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     images: [
       {
-        url: "https://e-dzwigi.pl/Hydromont_logo.png",
+        url: "https://e-dzwigi.pl/e-dzwigi.png",
         width: 512,
         height: 512,
         alt: "HYDROMONT - usługi dźwigowe i podnośniki koszowe na Śląsku",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Wynajem Dźwigów Śląsk | e-dzwigi.pl",
     description:
       "Dźwigi samojezdne i podnośniki koszowe - Śląsk. Wycena tego samego dnia. Tel: 508 313 906",
-    images: ["https://e-dzwigi.pl/Hydromont_logo.png"],
+    images: ["https://e-dzwigi.pl/e-dzwigi.png"],
   },
 };
 
@@ -62,12 +62,20 @@ const localBusinessSchema = {
   areaServed: [
     "Tychy",
     "Katowice",
-    "Gliwice",
-    "Zabrze",
-    "Bytom",
-    "Rybnik",
+    "Mysłowice",
     "Sosnowiec",
-    "Chorzów",
+    "Jaworzno",
+    "Mikołów",
+    "Łaziska Górne",
+    "Orzesze",
+    "Pszczyna",
+    "Bieruń",
+    "Lędziny",
+    "Bojszowy",
+    "Wyry",
+    "Ornontowice",
+    "Imielin",
+    "Chełm Śląski",
   ],
   serviceType: [
     "Wynajem dźwigów samojezdnych",

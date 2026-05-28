@@ -81,7 +81,7 @@ export function Navbar() {
                         className="absolute inset-0 flex items-center justify-start"
                     >
                         <Image
-                            src="/Hydromont_logo.png"
+                            src="/e-dzwigi.png"
                             alt="Hydromont"
                             fill
                             className="object-contain object-left"
@@ -96,7 +96,7 @@ export function Navbar() {
                         className="absolute inset-0 flex items-center justify-start"
                     >
                         <Image
-                            src="/Hydromont_white.png"
+                            src="/e-dzwigi-white.png"
                             alt="Hydromont"
                             fill
                             className="object-contain object-left"

@@ -16,7 +16,7 @@ export function Footer() {
           <div className="lg:col-span-4 space-y-8">
              <div className="relative h-32 w-full max-w-md">
                 <Image
-                    src="/Hydromont_white.png"
+                    src="/e-dzwigi-white.png"
                     alt="Hydromont"
                     fill
                     className="object-contain object-left"
