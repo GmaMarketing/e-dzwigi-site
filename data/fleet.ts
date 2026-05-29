@@ -143,7 +143,7 @@ export const fleet: FleetMachine[] = [
   },
   {
     slug: "podnosnik-koszowy-ruthmann-27m",
-    model: "Ruthmann TB 270.2",
+    model: "Ruthmann TB 270.3",
     seoH1: "Wynajem Podnośnika Koszowego 27m - Śląsk",
     displayName: "FASADY I WYCINKA",
     type: "Podnośnik Koszowy",
@@ -165,6 +165,6 @@ export const fleet: FleetMachine[] = [
     ],
     diagrams: [],
     isNew: true,
-    description: "Ruthmann TB 270.2 na Nissanie NT400 - nasz najnowszy podnośnik koszowy. 27m wysokości roboczej, zasięg boczny do 14,8m. Dociera do elewacji, dachów i koron drzew bez żadnych rusztowań. Do 9 pięter bez problemu. Dostępny na Śląsku."
+    description: "Ruthmann TB 270.3 na Nissanie NT400 - nasz najnowszy podnośnik koszowy. 27m wysokości roboczej, zasięg boczny do 14,8m. Dociera do elewacji, dachów i koron drzew bez żadnych rusztowań. Do 9 pięter bez problemu. Dostępny na Śląsku."
   }
 ];

@@ -41,7 +41,7 @@ export default function OfferPage() {
               { meter: "40m", capacity: "do 50T",  name: "MIASTO I PLACE BUDOWY",  specs: "Żuraw samojezdny · zasięg 40m",        image: "/sprzet/dzwig-40m.webp",          href: "/flota/zuraw-samojezdny-50t"          },
               { meter: "30m", capacity: "do 35T",  name: "HALE I PRZEMYSŁ",        specs: "Żuraw samojezdny · zasięg 30m",        image: "/sprzet/dzwig-30m.webp",          href: "/flota/zuraw-samojezdny-35t"          },
               { meter: "26m", capacity: "do 25T",  name: "DOMY I OSIEDLA",         specs: "Żuraw samojezdny · zasięg 26m",        image: "/sprzet/dzwig-zdjecie2-26m.webp", href: "/flota/zuraw-samojezdny-25t"          },
-              { meter: "27m", capacity: "230 kg",  name: "FASADY I WYCINKA",       specs: "Podnośnik koszowy · Ruthmann TB 270.2", image: "/sprzet/podnosnik-25m.webp",     href: "/flota/podnosnik-koszowy-ruthmann-27m", isNew: true },
+              { meter: "27m", capacity: "230 kg",  name: "FASADY I WYCINKA",       specs: "Podnośnik koszowy · Ruthmann TB 270.3", image: "/sprzet/podnosnik-25m.webp",     href: "/flota/podnosnik-koszowy-ruthmann-27m", isNew: true },
               { meter: "21m", capacity: "220 kg",  name: "ELEWACJE I WYCINKA",     specs: "Podnośnik koszowy · GSR E 209 PX",       image: "/sprzet/podnosniki-21m.webp",     href: "/flota/podnosnik-koszowy-21m"         },
             ].map((card) => (
               <Link

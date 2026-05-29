@@ -19,7 +19,7 @@ export function NewEquipment() {
       <div className="absolute inset-0">
         <Image
           src="/sprzet/podnosnik-25m.webp"
-          alt="Ruthmann TB 270.2 podnośnik koszowy na Nissanie NT400 – e-dzwigi.pl Śląsk"
+          alt="Ruthmann TB 270.3 podnośnik koszowy na Nissanie NT400 – e-dzwigi.pl Śląsk"
           fill
           sizes="100vw"
           className="object-cover object-center"
@@ -70,7 +70,7 @@ export function NewEquipment() {
               <span className="text-zinc-400 italic">KOSZOWY</span>
             </h2>
             <p className="text-base md:text-lg text-zinc-400 font-medium mt-3 mb-7">
-              Ruthmann TB 270.2 &nbsp;·&nbsp; Nissan NT400
+              Ruthmann TB 270.3 &nbsp;·&nbsp; Nissan NT400
             </p>
           </motion.div>
 
@@ -102,7 +102,7 @@ export function NewEquipment() {
             transition={{ duration: 0.65, delay: 0.28 }}
             className="text-zinc-400 max-w-md leading-relaxed text-sm mb-8 border-l-2 border-amber-500 pl-5"
           >
-            Mamy nowy podnośnik koszowy Ruthmann TB 270.2 na Nissanie NT400 - wyżej, dalej i bardziej dostępny.
+            Mamy nowy podnośnik koszowy Ruthmann TB 270.3 na Nissanie NT400 - wyżej, dalej i bardziej dostępny.
             Klienci na Śląsku wiedzą już, że warto zadzwonić.
           </motion.p>
 
